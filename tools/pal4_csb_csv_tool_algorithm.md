@@ -372,3 +372,26 @@ import:
 - 变长替换不会破坏更深层的内部引用结构
 
 在这个前提成立时，这个算法是一个很高性价比的 CSB 文本处理方案。
+
+## 十四、快速演示
+
+如果你希望尽量多抓出带中文的候选串，包括长度只有 1 个字符的条目，可以使用更宽松的导出参数：
+
+```powershell
+py tools/pal4_csb_csv_tool.py export --input "D:\PAL4_unpack\Decompressed\script" --output "scripts\script_export.csv" --min-chars 1 --mode all
+```
+
+说明：
+
+- `--min-chars 1`：允许导出单字符文本。
+- `--mode all`：只要字符串里含有 CJK 字符就导出，不再套用默认的严格过滤规则。
+
+
+最终导回csb文件的参数：
+
+```powershell
+
+py tools/pal4_csb_csv_tool.py import --input scripts/script_export.translated.csv --overflow expand --backup
+
+
+```
