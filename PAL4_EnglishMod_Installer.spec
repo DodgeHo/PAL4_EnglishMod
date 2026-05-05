@@ -5,7 +5,7 @@ a = Analysis(
     ['pal4_english_mod_installer.py'],
     pathex=[],
     binaries=[],
-    datas=[('v0.2.0', 'v0.2.0')],
+    datas=[('0.3.0', '0.3.0')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

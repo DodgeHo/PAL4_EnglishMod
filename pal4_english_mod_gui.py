@@ -67,7 +67,7 @@ class ModGuiApp:
 
         self.install_btn = tk.Button(button_row, text="Install Mod", width=16, command=lambda: self._run_action("install"))
         self.uninstall_btn = tk.Button(button_row, text="Uninstall Mod", width=16, command=lambda: self._run_action("uninstall"))
-        self.upgrade_btn = tk.Button(button_row, text="Upgrade (Reserved)", width=18, command=lambda: self._run_action("upgrade"))
+        self.upgrade_btn = tk.Button(button_row, text="Upgrade Mod", width=18, command=lambda: self._run_action("upgrade"))
 
         self.install_btn.pack(side=tk.LEFT)
         self.uninstall_btn.pack(side=tk.LEFT, padx=8)

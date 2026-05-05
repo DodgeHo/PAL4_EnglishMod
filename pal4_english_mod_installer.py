@@ -12,16 +12,19 @@ Features:
 from __future__ import annotations
 
 import argparse
+import atexit
 import json
 import re
 import shutil
 import sys
+import tempfile
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
 
-PATCH_VERSION = "0.2.0"
+PATCH_VERSION = "0.3.3"
 GAME_FOLDER_NAME = "Chinese Paladin 4"
 MOD_STATE_DIR_NAME = ".pal4_englishmod"
 BACKUP_DIR_NAME = ".pal4_englishmod_backup"
@@ -34,22 +37,39 @@ PATCH_FILES = [
     Path("gamedata/database.cpk"),
     Path("gamedata/script.cpk"),
     Path("gamedata/ui.cpk"),
+    Path("gamedata/VideoA.cpk"),
+    Path("gamedata/videob.cpk"),
+    Path("gamedata/PALSound/HSOff.mp3"),
+    Path("gamedata/PALSound/HSOn.mp3"),
 ]
+
+
+_TEMP_PATCH_DIRS: list[Path] = []
 
 
 DISCLAIMER_TEXT = """
 ==================== DISCLAIMER ====================
-This fan project is non-profit and made for passion.
-
-This mod is still in active testing and is NOT finished.
-You may encounter defects, incomplete content, or unstable behavior.
-At this stage, save-file stability after applying this mod is NOT guaranteed.
-
+This fan project is non-profit and made for passion. 
 This project is developed for the Steam version of Sword and Fairy 4
 (Chinese Paladin 4) only.
 
+In-game content has been tested.
+
+Known unfinished areas:
+- Dialogue text from Chapter 5 onward (out of 9 chapters total)
+    has not yet received full manual polishing.
+- Some help and quest text still has inconsistent line-wrapping rules,
+    which may affect readability, but the content itself is complete.
+
+Audio note:
+- SFX and voice-over volume are tied together.
+- If Chinese voice sounds too quiet, set SFX volume to at least 2x of music volume in game settings.
+- If you do not want voice-over, press V in-game to toggle voice playback.
+
 Latest updates:
 https://github.com/DodgeHo/PAL4_EnglishMod
+
+I am DodgeHo, a long-time fan of the series.
 
 Contact:
 Email: asdsay@foxmail.com
@@ -214,6 +234,12 @@ def get_patch_source_dir(runtime_base_dir: Path) -> Path:
         ok, _ = validate_patch_source(candidate)
         if ok:
             return candidate
+
+    for zip_candidate in _get_zip_source_candidates(runtime_base_dir):
+        extracted = _extract_patch_zip(zip_candidate)
+        if extracted is not None:
+            return extracted
+
     return runtime_base_dir / PATCH_VERSION
 
 
@@ -224,6 +250,57 @@ def validate_patch_source(patch_source: Path) -> tuple[bool, list[Path]]:
 
 def ensure_parent(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+
+
+def _cleanup_temp_patch_dirs() -> None:
+    for path in _TEMP_PATCH_DIRS:
+        try:
+            shutil.rmtree(path, ignore_errors=True)
+        except Exception:
+            pass
+
+
+atexit.register(_cleanup_temp_patch_dirs)
+
+
+def _get_zip_source_candidates(runtime_base_dir: Path) -> list[Path]:
+    roots = [runtime_base_dir, Path.cwd()]
+    if getattr(sys, "frozen", False):
+        roots.insert(1, Path(sys.executable).resolve().parent)
+
+    zip_names = [
+        f"{PATCH_VERSION}.zip",
+        f"PAL4_EnglishMod_{PATCH_VERSION}.zip",
+        "patch.zip",
+    ]
+
+    candidates: list[Path] = []
+    for root in roots:
+        for name in zip_names:
+            candidates.append(root / name)
+    return _dedupe_paths(candidates)
+
+
+def _extract_patch_zip(zip_path: Path) -> Path | None:
+    if not zip_path.exists() or zip_path.suffix.lower() != ".zip":
+        return None
+
+    temp_root = Path(tempfile.mkdtemp(prefix=f"pal4_patch_{PATCH_VERSION}_"))
+    try:
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            zf.extractall(temp_root)
+    except Exception:
+        shutil.rmtree(temp_root, ignore_errors=True)
+        return None
+
+    for candidate in [temp_root / PATCH_VERSION, temp_root]:
+        ok, _ = validate_patch_source(candidate)
+        if ok:
+            _TEMP_PATCH_DIRS.append(temp_root)
+            return candidate
+
+    shutil.rmtree(temp_root, ignore_errors=True)
+    return None
 
 
 def write_quick_uninstall_bat(game_dir: Path) -> None:
@@ -276,11 +353,24 @@ def install_patch(game_dir: Path, runtime_base_dir: Path) -> int:
         print("Searched locations:")
         for candidate in get_patch_source_candidates(runtime_base_dir):
             print(f"  - {candidate}")
+        for zip_candidate in _get_zip_source_candidates(runtime_base_dir):
+            print(f"  - {zip_candidate}")
         return 1
 
     backup_root = game_dir / BACKUP_DIR_NAME
     state_dir = game_dir / MOD_STATE_DIR_NAME
     manifest_path = state_dir / MANIFEST_FILE_NAME
+
+    if manifest_path.exists():
+        try:
+            existing_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            existing_version = str(existing_manifest.get("version", "")).strip()
+            if existing_version == "0.2.0":
+                print("Detected PAL4 English Mod v0.2.0. Upgrading to v0.3.3 with existing backups.")
+            elif existing_version and existing_version != PATCH_VERSION:
+                print(f"Detected existing mod version: {existing_version}. Will continue and update to v{PATCH_VERSION}.")
+        except Exception:
+            print("Warning: failed to read existing manifest. Installer will continue with backup-safe mode.")
 
     missing_in_game = [rel for rel in PATCH_FILES if not (game_dir / rel).exists()]
     if missing_in_game:
@@ -361,18 +451,15 @@ def uninstall_patch(game_dir: Path) -> int:
 
 
 def upgrade_patch_placeholder(game_dir: Path, runtime_base_dir: Path) -> int:
-    _ = game_dir
-    _ = runtime_base_dir
-    print("Upgrade interface is reserved for future versions.")
-    print("For now, use install/uninstall manually between versions.")
-    return 0
+    print("Running upgrade workflow...")
+    return install_patch(game_dir, runtime_base_dir)
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="PAL4 English Mod installer")
     parser.add_argument("--install", action="store_true", help="Install patch")
     parser.add_argument("--uninstall", action="store_true", help="Uninstall patch")
-    parser.add_argument("--upgrade", action="store_true", help="Upgrade patch (placeholder)")
+    parser.add_argument("--upgrade", action="store_true", help="Upgrade patch")
     parser.add_argument("--game-path", type=str, default=None, help="Path to game folder")
     parser.add_argument(
         "--yes",
@@ -386,7 +473,7 @@ def interactive_menu() -> str:
     print("Choose an action:")
     print("  1. Install mod")
     print("  2. Uninstall mod")
-    print("  3. Upgrade mod (placeholder)")
+    print("  3. Upgrade mod")
     print("  4. Exit")
     choice = input("Enter 1/2/3/4: ").strip()
     return {
