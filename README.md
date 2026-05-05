@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="assets/sword_and_fairy_4_logo.png" alt="Sword and Fairy 4" width="600"/>
+  <img src="assets/EnglishMod.jpg" alt="Sword and Fairy 4" width="600"/>
 </p>
 
-==================== DISCLAIMER ====================
 This fan project is non-profit and made for passion. This project is developed for the Steam version of Sword and Fairy 4 (Chinese Paladin 4) only.
 
 In version 0.3.3, in-game content has been tested.
@@ -27,4 +26,4 @@ Contact:
 Email: asdsay@foxmail.com
 Discord: https://discord.gg/sYc8v8Y4
 QQ Group: 1064586214
-====================================================
+
