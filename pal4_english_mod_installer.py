@@ -24,7 +24,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-PATCH_VERSION = "0.3.3"
+PATCH_VERSION = "0.4.1a"
 GAME_FOLDER_NAME = "Chinese Paladin 4"
 MOD_STATE_DIR_NAME = ".pal4_englishmod"
 BACKUP_DIR_NAME = ".pal4_englishmod_backup"
@@ -39,6 +39,7 @@ PATCH_FILES = [
     Path("gamedata/ui.cpk"),
     Path("gamedata/VideoA.cpk"),
     Path("gamedata/videob.cpk"),
+    Path("gamedata/Music/p61.smp"),
     Path("gamedata/PALSound/HSOff.mp3"),
     Path("gamedata/PALSound/HSOn.mp3"),
 ]
@@ -56,8 +57,6 @@ This project is developed for the Steam version of Sword and Fairy 4
 In-game content has been tested.
 
 Known unfinished areas:
-- Dialogue text from Chapter 5 onward (out of 9 chapters total)
-    has not yet received full manual polishing.
 - Some help and quest text still has inconsistent line-wrapping rules,
     which may affect readability, but the content itself is complete.
 
@@ -366,7 +365,7 @@ def install_patch(game_dir: Path, runtime_base_dir: Path) -> int:
             existing_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             existing_version = str(existing_manifest.get("version", "")).strip()
             if existing_version == "0.2.0":
-                print("Detected PAL4 English Mod v0.2.0. Upgrading to v0.3.3 with existing backups.")
+                print("Detected PAL4 English Mod v0.2.0. Upgrading to v0.3.5a with existing backups.")
             elif existing_version and existing_version != PATCH_VERSION:
                 print(f"Detected existing mod version: {existing_version}. Will continue and update to v{PATCH_VERSION}.")
         except Exception:
