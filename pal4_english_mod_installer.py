@@ -24,7 +24,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-PATCH_VERSION = "0.4.3a"
+PATCH_VERSION = "0.4.4a"
 GAME_FOLDER_NAME = "Chinese Paladin 4"
 MOD_STATE_DIR_NAME = ".pal4_englishmod"
 BACKUP_DIR_NAME = ".pal4_englishmod_backup"

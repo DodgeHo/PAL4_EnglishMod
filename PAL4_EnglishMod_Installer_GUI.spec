@@ -5,7 +5,7 @@ a = Analysis(
     ['pal4_english_mod_gui.py'],
     pathex=[],
     binaries=[],
-    datas=[('0.4.3a', '0.4.3a')],
+    datas=[('0.4.4a', '0.4.4a')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
