@@ -40,6 +40,6 @@ Known notes
 Support / Updates
 I am DodgeHo, a long-time fan of the series.
 - GitHub: https://github.com/DodgeHo/PAL4_EnglishMod
-- Email: asdsay@foxmail.com
-- Discord: https://discord.gg/sYc8v8Y4
+- Email: asdsay@gmail.com
+- Discord: daoanlandodge
 - QQ Group: 1064586214
