@@ -1,0 +1,275 @@
+﻿在剧情中出现,物品ID,物品名称,物品说明,物品属性说明,初版翻译,来自Bosco的翻译,其他备选,第三版翻译,,,
+Y,3000,止血草,山野之中常见的草药，对于治疗外伤有不错的疗效。,我方单体，恢复少量精,Healing Herb,Mending Herb,Blood stopping Herb,Mending Herb,,"A common herb in the wild, quite effective for treating external injuries.",Single Small HP Recover
+,3001,行军丹,江湖偏方，食之可使血脉通畅。,我方单体，恢复中等精,Marching Pill,,,Marching Pill,,Folk remedy; consuming it promotes blood circulation.,Single Moderate HP Recover
+,3002,护心丹,方士秘炼的丹药，可助人迅速恢复体力。,我方单体，恢复大量精,Heart-Protecting Pill,,,Heart Pill,,"Alchemist's secret pill, helps quickly Recover Stamina.",Single Large HP Recover
+Y,3003,紫菁玉蓉膏,仙人炼制的药膏，具有白骨生肌的神奇功效。,我方单体，恢复全部精,Purple Jade Cream,Renewal Salve,,Renewal Salve,,"An ointment refined by immortals, possessing the miraculous effect of regenerating flesh on bone.",Single Full HP Recover
+,3004,龙胆草,有补血养精功效的奇草，百姓以为神赐之草，又因其味极苦，故曰“龙胆”。,我方全体，恢复中等精,Gentian Herb,,,Gentian Herb,,"A miraculous herb with blood-tonifying and essence-nourishing effects. Common folk consider it a god-given herb, and due to its extremely bitter taste, it's called Gentian.",Team Moderate HP Recover
+,3005,晗灵果,生于仙山福地之中，蕴含山川灵气的果实，食之可使人容光焕发，精力大增。,我方全体，恢复大量精,Hanling Fruit,,,Hanling Fruit,,"Fruit born in blessed lands of immortal mountains, containing the spiritual energy of mountains and rivers. Eating it can make one radiant and greatly boost energy.",Team Large HP Recover
+Y,3006,鼠儿果,山野中常见的一种果实，可以提神醒脑。,我方单体，恢复少量神,Mouse Fruit,Moonberry,,Moonberry,,A common wild fruit that refreshes and invigorates the mind.,Single Small MP Recover
+,3007,还神丹,由方士精心炼制的丹药，用以提神。,我方单体，恢复中等神,Spirit-Returning Pill,Soothing Pill,,Soothing Pill,,A pill meticulously refined by a mystic to refresh the spirit.,Single Moderate MP Recover
+,3008,四合寒香,奇寒彻骨，奇香阵阵，可瞬间宁人心智。,我方单体，恢复大量神,Four-in Cold Incense,,,ColdFocusIncense,,"Piercingly cold with a strange fragrance, instantly calms the mind.",Single Large MP Recover
+,3009,天仙玉露,瓶内乃是灵道圣水化成的清气，嗅一下便精神百倍。,我方单体，恢复全部神,Celestial Jade Dew,Celestial Dew,,Celestial Dew,,The bottle contains clear qi transformed from sacred spiritual water; a sniff greatly refreshes the spirit.,Single Full MP Recover
+,3010,玉真散,道家仙药，可调息人体经脉，还神归元。,我方全体，恢复少量神,Yuzhen Powder,,,Jade Powder,,"Daoist elixir, regulates meridians, restores spirit and vitality.",Team Small MP Recover
+,3011,脂凝丸,绯红的丹丸，除了可调和气血，还能驻容养颜。,我方全体，恢复大量神,Fat-Coagulating Pill,,,Coagulate Pill,,"A crimson pill; besides regulating Qi and blood, it also preserves youth and beauty.",Team Large MP Recover
+,3012,桂花芙蓉糕,使用糯米粉和桂花制成的糕点，入口香甜松软，桂花香味浓郁。,我方单体，回复一定比例精、神，不可在战斗中使用,OsmanthusLotusCake,,,Osmanthus Cake,,"Pastry made from Use glutinous rice flour and osmanthus, sweet and soft, rich osmanthus aroma.",Single certain proportion of HP and MP
+Y,3013,八公山豆腐,采用八公山上甘洌清凉的泉水做成的豆腐，白如纯玉，细若凝脂，味道清爽。,我方单体，回复一定比例精、神，不可在战斗中使用,Bagong Mt. Tofu,,,Bagong Tofu,,"Tofu made from the sweet, cool spring water of Bagong Mountain. White as pure jade, fine as congealed fat, with a refreshing taste.","recover, can't be used in Battle."
+Y,3014,炸馓子,陈州常见的一种炸面食，形如盘酥，入口脆香。,我方单体，回复一定比例精、神，不可在战斗中使用,Fried Dough Twists,,,Crisp Twists,,"A common fried dough snack in Chenzhou, shaped like coiled pastry, crisp and fragrant.",Single certain proportion of HP and MP
+Y,3015,手抓饭,西域特有的手抓饭，油亮生辉，滋味鲜美，香气四溢。,我方单体，回复一定比例精、神，不可在战斗中使用,Pilaf,,,Pilaf,,"Unique Pilaf from the Western Regions, glossy and shiny, delicious and aromatic.","recover, can't be used in Battle."
+Y,3016,红绿八宝饭,以江米为主料，加入蜜枣、红绿蜜饯丝等十几种原料制成，色彩富丽，甜糯油润。,我方单体，回复一定比例精、神，不可在战斗中使用,Eight-Treasure Rice,,,8-Treasure Rice,,"Made primarily from glutinous rice, with candied dates, assorted preserved fruit strips, and over a dozen other ingredients—rich in color, sweet, sticky, and glossy.",Single certain proportion of HP and MP
+,3017,鬼城麻辣鸡,将调料淋在煮熟的鸡肉上，香辣味鲜，是酆都最常见的菜肴。,我方单体，回复一定比例精、神，不可在战斗中使用,Ghost City Chicken,,,GhostCityChicken,,"Seasonings poured over cooked chicken, spicy and flavorful, a most common dish in Fengdu.","recover, can't be used in Battle."
+,3018,百枣银杏粥,用百合、大枣、银杏，加入少量冰糖，小火熬制而成的粥，滋阴润肺，祛除不良症状。,我方单体，回复一定比例精、神，不可在战斗中使用,JujubeGinkgoPorridge,,,Ginkgo Porridge,,"A porridge made with lily bulbs, jujubes, ginkgo nuts, and a small amount of rock sugar, simmered over low heat. Nourishes yin, moistens lungs, and dispels negative conditions.",Single certain proportion of HP and MP
+,3019,淮王鱼羹,采用肉质肥厚的淮王鱼精心炖制成的鱼羹，味道鲜美，口感嫩滑。,我方单体，回复一定比例精、神，不可在战斗中使用,Huai King Fish Soup,,,Huai FishSoup,,"Fish soup carefully stewed with thick-fleshed Huaiwang fish, delicious and tender in texture.","recover, can't be used in Battle."
+Y,3020,醉枣,将白酒和鲜枣混合后密封发酵一段时间制成，醉枣酒香浓郁，脆甜宜人，对身体有滋补作用。,我方单体，回复一定比例精、神，不可在战斗中使用,Drunken Jujube,,,Drunken Jujube,,"Made by mixing white wine and fresh dates, then sealed for fermentation; Drunken Jujube has a rich aroma and crisp sweetness, nourishing for Body.",Single certain proportion of HP and MP
+Y,3021,奶茶,将砖茶与鲜奶混合烧制而成，奶香浓郁，提神醒脑，是胡人每日必不可少的饮品。,我方单体，回复一定比例精、神，不可在战斗中使用,Milk Tea,,,Milk Tea,,"Brewed by mixing brick tea with fresh milk, rich in dairy aroma, refreshing and invigorating—an essential daily drink for the Hu people.","recover, can't be used in Battle."
+Y,3022,醪酒,使用独特的原料和工艺酿造而成，风味别致，常饮可使人精力充沛。,我方单体，回复一定比例精、神，不可在战斗中使用,Laojiu,,,Laojiu,,"Brewed with Use's unique ingredients and process, distinctive flavor. Regular drinking can make one energetic.",Single certain proportion of HP and MP
+Y,3023,孟婆粥,孟婆粥有荤素两种，荤者鲜美，素者清香，传说饮下能够忘却前尘，但世间所见的孟婆粥只是酆都的出名小吃。,我方单体，回复一定比例精、神，不可在战斗中使用,Meng Po's Porridge,,,Meng Porridge,,"Meng Po's Porridge comes in meat and vegetarian versions. The meat one is savory, the veggie one fragrant. Legend says drinking it makes you forget the past, but the Meng Po's Porridge seen in the world is just a famous snack from Fengdu.","recover, can't be used in Battle."
+,3024,蜂王蜜,用上等的蜂王浆提炼而成，价格不菲，养身提神。,我方单体，恢复少量精、神,Royal Jelly,,,Royal Jelly,,"Refined from superior royal jelly, Price is precious, nourishing and invigorating.",Single certain proportion of HP and MP
+,3025,济生散,江湖中人常备之物，对内、外伤都有一定疗效。,我方单体，恢复中等精、神,Healing Powder,,,Mender Powder,,An item commonly carried by martial artists; has some curative effect on both internal and external injuries.,"recover, can't be used in Battle."
+,3026,菩提凝冰露,相传是菩提老祖留下来的秘药，可调息人体气血经脉。,我方单体，恢复大量精、神,Bodhi Ice Dew,,,Bodhi Dew,,"Legendary secret medicine left by Patriarch Bodhi, regulating qi, blood, and meridians.",Single certain proportion of HP and MP
+,3027,络灵瑶草,生于天地灵气汇集之地的仙草，食之可使人身轻目明，灵力充盈。,我方单体，灵大增，5回合,NetSpiritJadeGrass,,,Spirit Grass,,"An immortal grass born where the heaven and earth's spiritual energy gathers; consuming it makes the body light, eyes clear, and spiritual power full.","recover, can't be used in Battle."
+,3028,扶摇仙果,长于千仞崖上的果子，万年常青，久食便可长生不老。,我方单体，精、神全部恢复,SoaringImmortalFruit,,,Soaring Fruit,,"Fruit grown on thousand-ren cliffs, evergreen for millennia; long-term consumption grants immortality.",Single certain proportion of HP and MP
+,3029,还魂香,秘制的奇香，据说能够起死回生。,我方单体，复活，恢复少量精,Soul-Return Incense,Spirit Incense,,Spirit Incense,,"Secretly made rare incense, said to revive the dead.","recover, can't be used in Battle."
+,3030,回生仙饮,神女采集瑶草叶片上的香露调配而成，服用可令人绝地逢生。,我方单体，复活，恢复大量精,ReviveImmortalDrink,,,Revival Drink,,Blended from dew on fairy grass leaves collected by goddesses; consuming it can revive from desperate situations.,Single certain proportion of HP and MP
+,3031,天香续命露,仙人留下的至宝圣药，可使人起死回生。,我方单体，复活，恢复全部精,HeavenFragr. LifeDew,Vital Dew,,Vital Dew,,"A supreme holy medicine left by an immortal, capable of bringing the dead back to life.","recover, can't be used in Battle."
+,3032,血凝精,江湖上常见的良药，补血生肌，醒脑明目。,我方单体，恢复少量精，解眠，狂，乱,Blood-Coag. Essence,,,Clotting Essence,,"A common remedy in the martial world; restores HP, regenerates flesh, clears the mind, and brightens the eyes.",Single certain proportion of HP and MP
+,3033,八味檀香散,含八味珍贵药材，又加檀香合炼，补血驱邪、百无禁忌。,我方单体，恢复大量精，解定，封，禁,Sandalwood Powder,,,Sandal Powder,,"Contains eight precious herbs and sandalwood; replenishes blood, dispels evil, with no taboos.","recover, can't be used in Battle."
+,3034,寒蟾露,清神明目的良药，只可存放于水晶瓶中，保持其千年寒气不至于逸散。,我方单体，灵略增，5回合,Cold Toad Dew,,,Frost Toad Dew,,A medicine that clears the mind and brightens vision; must be stored in crystal bottles to preserve its millennia-old cold energy.,Single certain proportion of HP and MP\
+,3035,火焰草,通体红艳似火的奇草，生性克水。,我方单体，解水毒,Fire Herb,,,Fire Herb,,"Entirely fiery-red miraculous herb, inherently counters water.","recover, can't be used in Battle."
+,3036,冰莲絮,冰莲的果实，产于极寒之地，至阴至寒。,我方单体，解火毒,Ice Lotus Petals,,,Frost Lotus,,"Fruit of the ice lotus, born in frigid lands, supremely yin and cold.",Single Small HP and MP Recover
+,3037,月寒石,莹润如玉的石头，可将月亮的光华吸收为自身灵力，可解雷毒。,我方单体，解雷毒,Moonfrost Stone,,,Moonfrost Stone,,"A lustrous, jade-like stone that can absorb moonlight as its own spiritual energy, can relieve Thunder Poison.",Single Moderate HP and MP Recover
+,3038,过风藤,可解风毒的仙藤，生长于千仞绝壁之上。,我方单体，解风毒,Wind-Passing Vine,,,Wind Vine,,"Vine that can untie Wind Poison, grows on sheer cliffs.",Single Large HP and MP Recover
+,3039,土沉叶香,灵杉木的叶子，通体黄褐色，发出的阵阵芳香，可以避毒。,我方单体，解土毒,Earth Leaf Incense,,,Earthleaf Incense,,"A leaf from the Spirit Cedar, yellowish-brown throughout, emits a faint fragrance that can neutralize poisons.",Single Greatly increases WILL 5 rounds
+,3040,毒龙胆,天下至毒之物，沾者即死，但同时也能以毒攻毒，解尽天下奇毒。,我方单体，解任意毒，若自身未中毒则即死,Poison Dragon Gall,Deadly Gentian,,Deadly Gentian,,"The most poisonous substance under heaven; contact means instant death, but it can also use poison to counteract poison, curing all rare poisons.",Single HP and MP Full Recover
+,3041,大力丸,用人参、龟鳖制成的药丸，能强身壮体。,我方单体，武略增，5回合,Strength Pill,,,Might Pill,,"Pill made from ginseng and turtle, strengthens the body.",Revive with Small HP
+,3042,龙穴石髓,来自龙穴中的石屑，附有神龙的法力，能够让人武力增强数倍。,我方单体，武大增，5回合,Dragon Lair Marrow,,,Dragon Marrow,,"Stone fragments from a dragon's lair, imbued with the dragon's magic power, can multiply a person's combat strength several times over.",Revive with Large HP
+,3043,金蝉蜕,罕见的灵药，服用后能瞬间提高自身防御。,我方单体，防略增，5回合,Golden Cicada Shed,,,Golden Shed,,A rare spiritual medicine; instantly boosts own Defend upon consumption.,Revive with Full HP
+,3044,金刚咒,得道之士所画的符，有金刚护体之效。,我方单体，防大增，5回合,Diamond Mantra,,,Vajra Mantra,,"A talisman drawn by a Taoist master, with the effect of Vajra protection.",Single Small HP Recover and 
+,3045,神行丸,神奇的药丸，能让人身轻如燕。,我方单体，速略增，5回合,Swift Step Pill,,,Swift Pill,,Miraculous pill that makes one light as a swallow.,"removes Sleep, Mad, Confusion"
+,3046,疾风符,得道之士所画的符，具有让人脚下生风的法力。,我方单体，速大增，5回合,Gale Talisman,,,Gale Talisman,,"A talisman drawn by a Taoist master, possessing the power to make one's feet fleet.",Single Small HP Recover and 
+,3047,吉祥如意符,用朱砂在符纸上写的“吉祥如意”四字，能祈福增运。,我方单体，运略增，5回合,Auspice Wish Talisman,,,Luck Talisman,,The characters 'Auspicious As You Wish' written in cinnabar on talisman paper can bring blessings and increase luck.,"removes Paralyze, Seal, Forbid"
+,3048,灵运宝令,一块灵玉所制的令牌，蕴含着强大的法力，能将人运气提至极限。,我方单体，运大增，5回合,Spirit Luck Token,,,Fate Token,,"A token made from a piece of spiritual jade, containing powerful magic that can elevate a person's luck to its limit.",
+,3049,紫地甘萝,在玄冰中冻结千年而不死的仙草，有舒筋活骨之效。,我方单体，解“定”,Purple Earth Radish,,,Purple Radish,,"A celestial herb frozen in profound ice for millennia Immortal, effective for soothing muscles and bones.",Single Slightly increases WILL 5 rounds
+,3050,龙须金藤,状如龙须的金黄色藤条，据说可解除封咒。,我方单体，解“封”,Dragon Beard Vine,,,Gold Vine,,"A golden vine resembling dragon whiskers, said to be able to dispel curses.",
+,3051,倚月蓉花,此花万年才开一次，嗅其芳香可让人百无禁忌。,我方单体，解“禁”,LeaningMoonHibiscus,,,Moon Hibiscus,,This flower blooms once every ten thousand years; smelling its fragrance makes one invulnerable to all taboos.,Removes Water Poison
+,3052,天心葵,蕴含山川灵气的仙草，散发的芳香可使头脑立刻清醒。,我方单体，解“眠”,Skyheart Sunflower,,,Skyheart Herb,,Immortal grass imbued with mountain and river spiritual energy; its fragrance instantly clears the mind.,Removes Fire Poison
+,3053,通天丸,修道之人梦寐以求的灵丹，可使人心宁神和。,我方单体，解“狂”,Heaven-Passing Pill,,,Calming Pill,,A spiritual elixir coveted by cultivators; calms the heart and harmonizes the spirit.,Removes Thunder Poison
+,3054,戒冥玉,避邪之物，上附仙家法力，可抵御妖术。,我方单体，解“乱”,Jieming Jade,,,Banishing Jade,,"Talisman to ward off evil, imbued with immortal power, resists demonic arts.",Removes Wind Poison
+,3055,晗光琉璃,据说是女娲补天时遗落人间的宝石，蕴含无穷神力。,我方单体，解除所有不良状态,HanguangColorGlaze,,,Prism Gem,,"Legend says it's a gem left in the mortal world when Nüwa mended the heavens, containing infinite divine power.",Removes Earth Poison
+,3056,捆仙绳,施有咒术的丝绳，可令妖怪动弹不得。,敌方单体，“定”，3回合,BindingImmortalRope,,,Binding Rope,,"A silk rope enchanted with a spell, capable of immobilizing monsters.",Cures Poison (any)
+,3057,封咒符,用朱砂在纸上书写神秘的符号，具有封住敌人法术的效果。,敌方单体，“封”，3回合,Seal Spell Talisman,,,Seal Talisman,,"Mysterious symbols written on paper with cinnabar, capable of sealing enemy spells.",instant death if self not poisoned
+,3058,锁灵环,本为鬼怪索魂之用，附有鬼神的法力。,敌方单体，“禁”，3回合,Spirit-Locking Ring,,,Spirit Lock,,"Originally used by ghosts to claim souls, imbued with divine and demonic power.",Single Slightly increases Physical 5 rounds
+Y,3059,无忧梦铃,铃声勾魂慑魄，能让聆听之人坠入梦境，意识全无。,敌方单体，“眠”，3回合,Carefree Dream Bell,,,Dream Bell,,"The bell's chime captivates souls, causing listeners to fall into a dreamlike state, losing all consciousness.",Single Greatly increases Physical 5 rounds
+,3060,幽魔散,蕴含道法仙力，可让鬼魄妖灵为之迷狂，方寸大乱。,敌方单体，“狂”，3回合,Demon Powder,,,Demon Dust,,"Infused with Taoist immortal power, it can bewilder and confuse ghostly and demonic spirits.",Single Slightly increases Defense 5 rounds
+,3061,迷魂散,经由八十一味仙草炼制，可瞬间让敌人心智大乱。,敌方单体，“乱”，3回合,Soul-Dazing Powder,,,Daze Powder,,"Refined from eighty-one celestial herbs, can instantly throw enemies into mental chaos.",Single Greatly increases Defense 5 rounds
+,3062,烟月神镜,借助镜子上附着的神力，可以把敌人的攻击反射回去。,我方单体，“镜”，3回合,Smoke Moon Mirror,Moonsmoke Mirror,,Moonsmoke Mirror,,"Using the divine power attached to the mirror, it can reflect the enemy's Attack back.",Single Slightly increases Speed 5 rounds
+,3063,玄灵碧瑶,能聚天地灵气的宝玉，发出的光芒可以护体。,我方单体，“壁”，3回合,Mystic Spirit Biyao,,,Spirit Jade,,A precious jade that gathers spiritual energy from heaven and earth; its emitted light can protect the body.,Single Greatly increases Speed 5 rounds
+,3064,幻界水晶,不属于六界中任何一界的神秘宝物，使用后在一段时间内能抵御一切仙术。,我方单体，“界”，3回合,IllusoryRealmCrystal,Phantom Crystal,,Phantom Crystal,,"A mysterious treasure belonging to none of the six realms. After Use, temporarily resists all immortal arts.",Single Slightly increases Luck 5 rounds
+,3065,影月神石,吸收月影的精华所炼成的宝石，使用后可以隐身。,我方单体，“隐”，3回合,Shadow Moon Stone,,,Shadow Stone,,A gem refined from the essence of moonlight; Use to become invisible.,Single Greatly increases Luck 5 rounds
+Y,3066,钉耙秘笈,一本看起来有些破旧的书册，其中记载着怎样使用钉耙。,,Rake Secret Manual,,,Rake Manual,,"A somewhat tattered book, detailing how to Use a rake.",Single cures Paralyze
+Y,3067,土灵珠,蕴含着无穷法力的土系灵珠。,返回迷宫入口,Earth Spirit Pearl,,,Earth Spirit Pearl,,An earth spirit pearl containing boundless magical power.,Single cures Seal
+,3068,密雨银芒,属喷射系暗器，使用时空中银屑纷飞，且含有剧毒，触之即伤。,敌方单体，水毒,Dense Silver Glint,,,Silver Sting,,"Belongs to spray-type hidden weapons; when Use, silver dust flies in the air, containing deadly poison, harming on contact.",Single cures Forbiden
+,3069,毒蜂巢,有很多毒蜂栖息的巢穴，一旦不小心碰触到就会饱受毒蜂蜇咬之苦。,敌方单体，火毒,Poison Beehive,,,Poison Beehive,,Nest inhabited by many poisonous bees. Accidentally touching it will suffer from bee stings.,Single cures Sleep
+,3070,射影寒砂,此砂取自寒潭深处，凝结一股寒气，伤人时无影无形。,敌方单体，雷毒,ShadowCastColdSand,,,ColdshadowSand,,"Sand taken from deep cold pools, congealed with cold qi, harming enemies unseen.",Single cures Mad
+,3071,封喉羽,刃部极其尖锐，并涂有鸩羽之毒，见血封喉。,敌方单体，风毒,Throat-Seal Feather,,,Throat Feather,,"The blade is extremely sharp and coated with poison from Zhen bird feathers, lethal upon drawing blood.",Single cures Confused
+,3072,碧磷砂,用铁矿砂配以蛇毒炼制而成，在暗处便可见磷光闪烁。,敌方单体，土毒,GreenPhosphorusSand,,,Phosphor Sand,,"Made from iron ore sand mixed with snake venom, it glows with phosphorescence in the dark.",Removes all negative statuses
+Y,3073,蛊,施展蛊咒必需的媒介，也可直接作为暗器使用。,敌方单体，中任意毒,Gu(Bug),,,Gu Bug,,"A necessary medium for casting Gu curses, can also be used directly as a hidden weapon Use.",Enemy Single Paralyze 3 turns
+,3074,无忧散,白色无味的细小粉末，能让人手脚酸软，昏昏欲睡。,敌方单体，武略降，3回合,Worry-Free Powder,,,Slack Powder,,Fine white odorless powder that causes limb weakness and drowsiness.,Enemy Single Seal 3 turns
+,3075,凝酥软香,从西域传入的神秘熏香，能在瞬间让人全身筋骨瘫软，武力全消。,敌方单体，武大降，3回合,CondensedCreamFragr.,,,Cream Musk,,"A mysterious incense introduced from the Western Regions can instantly make one's muscles and bones go limp, causing a complete loss of combat strength.",Enemy Single Forbid 3 turns
+,3076,软骨浆,无色无味的迷药，能够在无形中使人瞬时全身无力，任人摆布。,敌方单体，防略降，3回合,Softening Pulp,Slack Paste,,Slack Paste,,"A colorless, odorless knockout drug that instantly renders the victim weak and helpless, completely at the mercy of others.",Enemy Single Sleep 3 turns
+,3077,骷髅鼓,传说是鬼差所用之鼓，能令人丧魂落魄，神胆俱散。,敌方单体，灵大降，3回合,Skull Drum,,,Skull Drum,,"Legend says it's a drum used by ghost officers, can shatter souls and terrify spirits.",Enemy Single Mad 3 turns
+,3078,大破天甲散,能够侵蚀盔甲和护体真气的奇门暗器，可令敌方疲软，无法招架我方攻击。,敌方单体，防大降，3回合,SkyArmorBreakPowder,,,ArmorbreakDust,,"An exotic hidden weapon that can corrode armor and protective qi, causing enemies to weaken and be unable to withstand our Attack.",Enemy Single Confused 3 turns
+,3079,南草乌,产自苗疆的一种毒草，散发出的毒气能令人全身麻痹，行动缓慢。,敌方单体，速略降，3回合,Southern Aconite,,,SouthAconite,,A poisonous grass from Miaojiang; the toxic gas it emits can cause full-body paralysis and slow movement.,Reflection 3 rounds
+,3080,地缚根,从地底深处冒出的老根，拥有法力，能将人缠绕使其移动困难。,敌方单体，速大降，3回合,Earthbound Root,,,Earthbind Root,,"An old root emerging from deep underground, possessing magic power, can entangle people making movement difficult.",Single Wall 3 rounds
+,3081,五生牯铃,佛家金刚铃，铃声如五雷轰顶。,敌方单体，雷伤害,Five-Life Bull Bell,,,Ox Bell,,"Buddhist vajra bell, its ring like thunder striking.",Single Barrier 3 rounds
+,3082,丧门钉,名字不祥的暗器，不仅用来伤人，更是给予敌人警示之意。,敌方单体，运大降，3回合,Funeral Nail,,,Funeral Nail,,"An unnamed hidden weapon, used not only to injure but also to warn the enemy.",Single Invisible 3 rounds
+,3083,寒鸦羽,沾染寒气的乌鸦羽毛，其中的水灵之力隐含煞气，极易伤人。,敌方单体，水伤害,Crow Feather,,,Crow Feather,,"Crow feathers tainted with cold qi, water spirit power within harbors killing intent, easily harming others.",
+,3084,梅花镖,梅花形的飞镖，边缘锐利，速度快。,敌方单体，减精,Plum Blossom Dart,Plum Dart,,Plum Dart,,"Plum-blossom shaped throwing dart, sharp edges, fast speed.",Return to maze entrance
+,3085,袖箭,可藏于衣袖中的微型弩箭，射程很远。,敌方单体，减精,Sleeve Dart,Sleeve Dart,,Sleeve Dart,,"A miniature crossbow that can be concealed in a sleeve, with a long range.","Enemy Single, Water Poison"
+,3086,雷火珠,填充火药的铁珠，投掷撞击后会爆裂伤人。,敌方单体，火伤害,Thunder Fire Pearl,,,Thunder Pearl,,"Iron pellet filled with gunpowder, explodes on impact to injure.","Enemy Single, Fire Poison"
+,3087,透骨钉,一种奇门暗器，锋利透骨，杀伤力很大。,敌方全体，减精,Bone-Piercing Nail,Pierce Spike,,Piercing Spike,,"An exotic hidden weapon, sharp enough to penetrate bone, with great lethality.","Enemy Single, Thunder Poison"
+,3088,震天雷,用旧瓷器改造的火器，谁也无法预料使用它的后果。,敌方全体，减精,Sky-Shaking Thunder,,,Sky Thunder,,A firearm modified from old porcelain; no one can predict Use its consequences.,"Enemy Single, Wind Poison"
+,3089,散花天女,四川唐门最强的暗器，靠机关发动，神鬼难防。,敌方全体，减精,ScatterFlowerMaiden,Metalstorm,,Metalstorm,,"The strongest hidden weapon of the Sichuan Tang Clan, activated by mechanism, unpredictable even by gods and ghosts.","Enemy Single, Earth Poison"
+,3090,鸣风石,带有风灵之力的暗器，掷出时伴有疾风之声，能伤人于无形。,敌方单体，风伤害,Singing Wind Stone,,,Gale Stone,,"A hidden weapon with wind spirit power, accompanied by Swift Wind sounds when thrown, can harm invisibly.","Enemy Single, inflicts Poison (any)"
+,3091,涣神砂,从西域传入的奇砂，本为巫师吸人魂魄时所用之物，作为暗器使用则可使敌人神魂涣散，无药可解。,敌方单体，减神,Scatter Spirit Sand,,,Spirit Sand,,"Exotic sand from the Western Regions, originally used by sorcerers to absorb souls; as a hidden weapon, Use can scatter the enemy's spirit, with no cure.","Enemy Single, PHY slightly decreased, 3 turns"
+,3092,噬魂硝,采百种毒草同硝石合炼，其毒可令敌人元神立时溃散。,敌方全体，减神,Soul-Cons. Saltpeter,,,Soul Salt,,Refined from a hundred poisonous herbs and saltpeter; its poison can instantly scatter an enemy's spirit.,"Enemy Single, PHY greatly decreased, 3 turns"
+,3093,坠影含幽,奇门暗器，石上附有土灵之力，掷出后不见其形，只现其影。,敌方单体，土伤害,FallingShadowMystery,,,Shadow Shard,,"An exotic hidden weapon; the stone carries earth spirit power, invisible when thrown, only its shadow appears.","Enemy Single, DEF slightly decreased, 3 turns"
+,3094,鸢尾香,以散发清雅幽香的鸢尾花制成的奇香，可宁心定气，十分名贵。,调和秘香的必备物品,Iris,,,Iris,,"A rare incense made from fragrant iris flowers, can calm the heart Focus, very precious.","Enemy Single, Will greatly decreased, 3 turns"
+,3095,广藿香,清凛芬芳，能够治疗风水毒肿，去除恶气，是中医不可缺少的良药。,调和秘香的必备物品,Patchouli,,,Patchouli,,"Clear and fragrant, can treat wind Water Poison swelling, remove evil qi, indispensable good medicine in Chinese medicine.","Enemy Single, DEF greatly decreased, 3 turns"
+,3096,丁香,散发出淡而幽远、馥而不腻的香气，能够安神宁气。,调和秘香的必备物品,Clove,,,Clove,,"Emits a light, distant, rich yet not cloying fragrance, can calm the spirit and soothe energy.","Enemy Single, SPD slightly decreased, 3 turns"
+,3097,青木香,具有奇特的甜蜜清香，能够使人神清气爽。,调和秘香的必备物品,Green Wood Incense,,,Greenwood,,"Has a peculiar sweet fragrance, can refresh and clear the mind.","Enemy Single, SPD greatly decreased, 3 turns"
+,3098,没药,有一种来自树林深处的木头味，具有疏筋散骨的奇效。,调和秘香的必备物品,Myrrh,,,Myrrh,,"Has a woody scent from deep in the forest, with miraculous effects for relaxing muscles and bones.","Enemy Single, Thunder Damage"
+,3099,乳香,散发出一种神秘诱人的香味，能够祛邪止痛，使人心神安定。,调和秘香的必备物品,Frankincense,,,Frankincense,,"Emits a mysterious, alluring fragrance, capable of dispelling evil, relieving pain, and calming the mind.","Enemy Single, LUK greatly decreased, 3 turns"
+Y,3100,龙脑香,清新纯净，熏燃时香气浓郁，而且烟雾甚小，被视为珍品。,调和秘香的必备物品,Borneol Incense,,,Borneol,,"Fresh and pure; when burned, it produces a rich fragrance with little smoke, considered a rare treasure.","Enemy Single, Water damage"
+Y,3101,这是剑,名字极其古怪的家传佩剑，使用起来却是相当称手。,,This is a Sword,,,It-is-a Sword,,"A family heirloom sword with an extremely peculiar name, yet Use feels quite handy.","Enemy Single, reduces HP"
+Y,3102,望舒剑,昆仑琼华派所炼神剑，以上古月神为名，蕴有极寒之气，可作为通仙之途。,,Wangshu Sword,,,Wangshu,,"Divine sword forged by Kunlun Qionghua Sect, named after the ancient moon goddess, imbued with extreme cold, a path to immortality.","Enemy Single, reduces HP"
+,3103,长弓,结实的硬质长弓，需要较强劲的臂力才能拉开，相对的，用它来打猎也颇显威力。,,Longbow,,,Longbow,,"A sturdy, hard Longbow requiring considerable arm strength to draw. Conversely, it proves quite powerful for hunting.","Enemy Single, Fire damage"
+Y,3104,古玉,晶莹剔透的古玉，莹光润泽，十分罕见，似乎蕴藏着一股神秘的力量。,,Ancient Jade,,,Ancient Jade,,"A crystal-clear Ancient Jade, glossy and rare, seemingly harboring a mysterious power.","Enemy All, reduces HP"
+Y,3105,灵光藻玉,通灵玉石，为开启昆仑琼华派后山禁地的秘钥。,,Spiritual Light Jade,,,Spirit Light Jade,,The Jade Stone is the secret key to unlocking the Back Mountain Forbidden Area of the Kunlun Qionghua Sect.,"Enemy All, reduces HP"
+Y,3106,玉腰弓,弓腰处镶有玉片，不仅作为装饰之用，更能令拉弓者出手稳健。,,Jade-Waist Bow,,,Jade-Waist Bow,,"Jade pieces inlaid at the bow's waist, not only decorative but also stabilizing the archer's shot.","Enemy All, reduces HP"
+Y,3107,帝女翡翠,当年云天青赠送给柳梦璃的奇石，能够掩盖身上的妖气，即便道法精深的修仙之人，亦无法察觉。,,Princess Jadeite,,,Princess Jadeite,,"A strange stone gifted by Yun Tianqing to Liu Mengli long ago, capable of masking demonic aura; even deeply cultivated immortals cannot detect it.","Enemy Single, Wind Damage"
+Y,3109,梭罗果,三寒器之一，为梭罗树的果实。传说梭罗树一生只结一颗果实，状如宝珠，乃至阴至寒之物。,,Suoluo Fruit,,,Suoluo Fruit,,"One of the Three Cold Artifacts, the fruit of the Suoluo Tree. Legend says the Suoluo Tree bears only one fruit in its lifetime, shaped like a precious pearl, an object of utmost yin and cold.","Enemy Single, reduces MP"
+Y,3110,鲲鳞,三寒器之一，为传说中的大鱼“鲲”的鳞片。,,Kun Scale,,,Kun Scale,,"One of the Three Cold Artifacts, a scale from the legendary giant fish 'Kun'.","Enemy All, reduces MP"
+Y,3111,光纪寒图,三寒器之一，此物为冬神所持，传说可以召唤雨雪风霜，具有无上灵力。,,Guangji Cold Map,,,Guangji Cold Map,,"One of the Three Cold Artifacts, held by the Winter God; legend says it can Summon rain, snow, wind, and frost, possessing supreme spiritual power.","Enemy Single, Earth damage"
+Y,3112,天河剑,慕容紫英为云天河打造的宝剑，以仙家秘法萃取灵力，并以稀世矿石加以锻造，挥动起来冰冷凌厉，绝非凡品。,,Tianhe Sword,,,Tianhe Sword,,"A sword forged by Murong Ziying for Yun Tianhe. Immortal secrets extract spiritual power, and rare Ore is used for Forging. Swings with icy sharpness, truly extraordinary.",Essential item for blending secret incense
+Y,3113,红魄,罕见的红色玉石，可令体质寒性的人手足皆暖。,,Red Soul,,,Red Soul Jade,,A rare red jade that can warm the hands and feet of those with cold constitutions.,Essential item for blending secret incense
+Y,3114,翳影枝,仅仅生长在鬼界的一种奇树，取其枝条佩戴在身上，便可穿越天下大多数结界，畅通无阻。,,Shadow-Branch,,,Shadowveil Sprig,,"A strange tree that grows only in the Ghost Realm. Carrying its branch Equip on one's body allows passage through most barriers in the world, unimpeded.",Essential item for blending secret incense
+Y,3115,后羿射日弓,此弓曾为后羿所持，射落了天上太阳，可以想见其威力之强。,,Houyi Sun Bow,,,Houyi Sun Bow,,"This bow was once held by Houyi, who shot down the suns; its power can be imagined.",Essential item for blending secret incense
+Y,3116,水灵珠,蕴含着无穷法力的水系灵珠。,,Water Spirit Pearl,,,Water Spirit Pearl,,A water spirit pearl containing boundless magical power.,Essential item for blending secret incense
+Y,3117,炙炎石,孕育于炎帝神农洞熔岩之中的奇石，炽热无比。,,Fire Stone,,,Flamestone,,"A strange stone nurtured in the Emperor Yan Shennong Cave lava, extremely hot.",Essential item for blending secret incense
+,3121,燧石,能够通过相互撞击而产生火星的矿石，是常见的生火工具之一。,,Flint,,,Flint,,"Ore that can generate sparks by striking against each other, one of the common fire-starting tools.",Essential item for blending secret incense
+Y,3126,九眼石,有着铜钱纹路的石头，散发着金色的光芒。,,Nine-Eyed Stone,,,Nine‑Eye Stone,,"A stone with coin-like patterns, emanating a golden glow.",
+,3127,黄铜矿,黄色的铜矿，到处都可以开采到。,熔铸、锻冶的材料,Chalcopyrite,,,Copper Ore,,"Yellow copper ore, can be mined everywhere.",
+,3128,辉铜矿,含有大量的铜，是提炼铜的重要矿石。,熔铸、锻冶的材料,Bornite Ore,,,Bornite,,"Contains a large amount of copper, an important Ore for refining copper.",
+,3129,斑铜矿,棕色矿石，表面有蓝色、紫色和红色的斑纹，因而又称“孔雀石”。,熔铸、锻冶的材料,Copper Ore,,,Peacock Ore,,"Brown Ore, surface has blue, purple, and red patterns, thus also called 'peacock stone'.",
+,3130,青琅玕,绿色花纹石，用来提炼铜，象征福善与吉祥。,熔铸、锻冶的材料,Green Langgan,,,Green Langgan,,"A green patterned stone used to refine copper, symbolizes fortune, virtue, and Auspicious.",
+,3131,赤铁石,赤色的石头，常用来提炼生铁，是打造利器的主要矿石。,熔铸、锻冶的材料,Red Iron Ore,,,Red Iron,,"A red stone often used to refine pig iron, a primary Ore for forging sharp weapons.",
+,3132,玄武铁岩,异常坚硬的黑色矿石，用来提炼玄铁，是打造上好兵器所需的材料。,熔铸、锻冶的材料,Tortoise Iron Rock,,,Dark Iron Ore,,"Exceptionally hard black Ore, used to refine dark iron, required for forging superior weapons Material.",
+,3133,昆仑紫鸦乌,昆仑山地脉孕育的矿石精华，可令装备坚固耐久。,熔铸、锻冶的材料,Kunlun Purple Crow,,,Kunlun Crow Ore,,"The Ore essence nurtured by the Kunlun mountain veins, can make Equipment sturdy and durable.",
+,3134,昆吾砂,天下第一坚硬的金刚碎砂，用它打造的兵器，可以轻松击破任何护甲。,熔铸、锻冶的材料,Kunwu Sand,,,Kunwu Sand,,The world's hardest diamond-crushing sand; weapons forged with it can easily pierce any armor.,
+,3135,耀金石,金光闪闪的石头，富含大量的黄金。,熔铸、锻冶的材料,Shining Gold Stone,,,Gold Ore,,"A glittering golden stone, rich in a large amount of gold.",
+,3136,自然金,色泽明亮，具有极强的韧性，能够提炼黄金，价格昂贵。,熔铸、锻冶的材料,Natural Gold,,,Natural Gold,,"Bright-colored, extremely tough, capable of refining gold, Price expensive.",
+,3137,金红石,颜色交杂的矿石，能够提炼出特殊的物质，是铸造兵器的上佳之选。,熔铸、锻冶的材料,Rutile,,,Rutile,,"Variegated Ore, can extract special substances, excellent choice for weapon forging.",
+,3138,紫金土,闪烁着紫金色的砂土，能够提炼出珍稀的紫金。,熔铸、锻冶的材料,Purple Gold Soil,,,Purple Gold Dust,,"Purple-gold sand that glitters, from which rare purple gold can be refined.",
+,3139,蛇纹石,表面有蛇形纹路的石头，形状凹凸，隐含着某种力量。,熔铸、锻冶的材料,Serpentine Stone,,,Serpent Stone,,"A stone with snake-like surface patterns, uneven shape, hinting at hidden power.",
+,3140,天河石,如翡翠一般碧绿光润的石头，用它打造之物拥有疾风迅雷之势。,熔铸、锻冶的材料,Amazonite,,,Amazonite,,A stone green and glossy like jadeite; items crafted from it possess Swift Wind swift thunder momentum.,
+,3141,天青石,浅蓝色的晶石，散发着淡淡的光芒，据说能给人带来好运。,熔铸、锻冶的材料,Celestite,,,Celestite,,"A light blue crystal emitting a faint glow, said to bring good luck.",
+Y,3142,紫晶,发出紫色光芒的水晶，常被用来打造饰品，能使人精神舒爽。,熔铸、锻冶的材料,Amethyst,,,Amethyst,,"A crystal emitting purple light, often used to craft Accessory, can soothe the spirit.",
+,3143,蟠龙玛瑙,能够祛邪、生气，是玛瑙中的珍品。,熔铸、锻冶的材料,Coiled Dragon Agate,,,CoilDragonAgate,,"Capable of dispelling evil and generating vitality, it is a treasure among agates.",
+,3144,虹光琥珀,发出七色虹光的琥珀，据说拥有七种不同的灵力，是不可多得的人间至宝。,熔铸、锻冶的材料,Rainbow Light Amber,,,Rainbow Amber,,"Amber emitting rainbow light of seven colors; said to possess seven different spiritual powers, a rare mortal treasure.",Material for smelting/forging
+,3145,羊脂白玉,其色白如凝脂，质地极纯极润，吸收了神秘高原上的大地精华而成。,熔铸、锻冶的材料,MuttonWhite Jade,,,White Jade,,"White as congealed fat, extremely pure and moist texture, formed by absorbing the essence of the mysterious plateau's earth.",Material for smelting/forging
+,3146,琅环碧玉,碧绿的玉石，表面光滑如镜，触之有冰凉透心的感觉。,熔铸、锻冶的材料,LanghuanGreen Jade,,,Green Jade,,"Green jade with a mirror-smooth surface, cool to the touch, chilling to the heart.",Material for smelting/forging
+,3147,绯云火石,天界炼丹炉中掉落的石头，内部封印着三昧真火，表面摸起来温暖而不会被灼伤。,熔铸、锻冶的材料,Scarlet Firestone,,,Scarlet Firestone,,"A stone fallen from a celestial alchemy furnace, sealed within is Samadhi True Fire. Its surface feels warm to the touch but never burns.",Material for smelting/forging
+,3148,云母,富有棱角的矿石，具有琉璃般的光泽，隐约可见里面菱形的晶柱。,熔铸、锻冶的材料,Mica,,,Mica,,"An ore with rich edges and corners, possessing a glass-like luster, with faintly visible rhombic crystal columns inside.",Material for smelting/forging
+,3149,奇异石,粉红色的矿石，相当罕见，用它打造的兵器极为坚硬。,熔铸、锻冶的材料,Strange Stone,,,Strange Ore,,"Pink Ore, quite rare; weapons forged from it are extremely hard.",Material for smelting/forging
+,3150,冰晶石,透明的水晶石，散发出冷冷的光芒。,熔铸、锻冶的材料,Ice Crystal,,,Ice Crystal,,"A transparent crystal stone, emitting a cold, gleaming light.",Material for smelting/forging
+,3151,烈火岩,其色深红，经过大火的灼烧而成，能使打造出来的兵器灼热逼人。,熔铸、锻冶的材料,Flame Rock,,,Flame Rock,,"Its color is deep red, formed through intense burning, making forged weapons scorchingly hot.",Material for smelting/forging
+,3152,岩铁地魄,深黄色的石头，表面粗糙，虽然看起来毫不起眼，却是吸取大地精华而成。,熔铸、锻冶的材料,Rock Iron Earth Soul,,,Earth Soul Ore,,"A deep yellow stone with a rough surface. Though unremarkable in appearance, it is formed by absorbing the essence of the earth.",Material for smelting/forging
+,3153,雷魄晶,蓝紫色的晶石，蕴含着雷灵之力，偶尔能看见里面划过一道闪电般的光芒。,熔铸、锻冶的材料,Thunder Soul Crystal,,,Thunder Crystal,,"A blue-purple crystal containing the power of thunder spirit. Occasionally, a flash of lightning can be seen inside.",Material for smelting/forging
+,3154,霜露晶,霜之气、露之神化成的晶石，清纯透明，周围有薄薄的气流环绕。,熔铸、锻冶的材料,Frost Dew Crystal,,,Frostdew Crystal,,"Crystal formed from frost's breath and dew's spirit, pure and transparent, surrounded by thin swirling air currents.",Material for smelting/forging
+Y,3155,月长石,光滑圆润，因长久吸取月光的力量而富有灵力，散发着冰魄的寒光。,熔铸、锻冶的材料,Moonstone,,,Moonstone,,"Smooth and round, rich in spiritual power from long-term absorption of moonlight, emits icy cold light.",Material for smelting/forging
+,3156,火纹玉,其色红如火，表面有一条条暗红的花纹，摸上去有炽热的灼烧感。,熔铸、锻冶的材料,Fire Pattern Jade,,,Fire Jade,,"Its color is red as fire, with dark red patterns on the surface, feeling burningly hot to the touch.",Material for smelting/forging
+Y,3157,寒月冰魄,犹如冰晶凝成的石头，散发出凛冽彻骨的气息，令人不敢触摸。,熔铸、锻冶的材料,Cold Moon Ice Soul,,,Frost Soul,,"A stone as if condensed from ice crystals, radiating a piercing, bone-chilling aura that makes one dare not touch it.",Material for smelting/forging
+,3158,黑曜石,坚硬刚烈，可以贯通灵脉，避邪除秽气，是非常稀有的宝石。,熔铸、锻冶的材料,Obsidian,,,Obsidian,,"Hard and intense, can penetrate Channeling meridians, ward off evil and dispel foul qi, a very rare gem.",Material for smelting/forging
+,3159,虎睛石,淡黄色的石头，有着老虎眼睛一般的花纹，射出捉摸不定光芒。,熔铸、锻冶的材料,Tiger's Eye Stone,,,Tigereye,,"A pale yellow stone with patterns resembling tiger's eyes, emitting an elusive, shimmering light.",Material for smelting/forging
+,3160,云晶石,纯净透明的晶石，似有云纹覆于表面，凝聚着一层氤氲的雾气。,熔铸、锻冶的材料,Cloud Crystal,,,Cloud Crystal,,"A pure, transparent crystal stone with cloud-like patterns on its surface, gathering a layer of misty vapor.",Material for smelting/forging
+,3161,浩英石,一粒粒明亮闪烁的颗粒结合而成，光芒耀眼。,熔铸、锻冶的材料,Haoying Stone,,,Haoying Stone,,"Formed from bright, sparkling particles, dazzlingly radiant.",Material for smelting/forging
+,3162,黝碧石,青莲色的石头，碧光幽幽，其中似有鬼火晃动，透出丝丝阴气。,熔铸、锻冶的材料,Dark Green Stone,,,Dark Jade,,"A lotus-blue stone with a faint greenish glow, inside which ghostly flames seem to flicker, emitting wisps of sinister aura.",Material for smelting/forging
+,3163,尖晶石,弯月形的宝石，通体乌黑透亮，散发着无穷的寒气，是打造武器的绝佳之物。,熔铸、锻冶的材料,Spinel,,,Spinel,,"A crescent-shaped gem, pitch black and translucent, emitting boundless cold air. An excellent material for forging Weapon.",Material for smelting/forging
+,3164,银星晶魄,银色的晶石，如同天上星星般灿烂夺目，在夜晚光芒可以照射到十丈之外。,熔铸、锻冶的材料,Silver Star Soul,,,Silver Soul,,"A silver crystal, as brilliant as stars in the sky, its light can shine over a hundred feet at night.",Material for smelting/forging
+,3165,日辉晶魄,白色晶亮的宝石，光滑如玉，发出比日光还要耀眼的光芒。,熔铸、锻冶的材料,Sun Crystal Soul,,,Sun Soul,,"A white, crystal-bright gem, smooth as jade, emitting a light more dazzling than sunlight.",Material for smelting/forging
+,3166,幽冥魂晶,碧绿的晶石，内部暗影浮动，蕴含的鬼力能够摄人心魄。,熔铸、锻冶的材料,Nether Soul Crystal,,,Nether Crystal,,A green crystal with shifting shadows inside; the ghostly power within can captivate the soul.,Material for smelting/forging
+Y,3167,九转圣光石,散发着圣洁光芒的石头，是上好的铸剑之材。,,Nine Revo Holy Stone,,,Saintlight Stone,,"A stone emitting a holy glow, excellent material for sword forging.",Material for smelting/forging
+,3168,软星,一颗金色的星星，不知道从何处掉落，拥有神秘的力量。,熔铸、锻冶的材料,Softstar,,,Softstar,,"A golden star that fell from somewhere unknown, possessing mysterious power.",Material for smelting/forging
+Y,3169,木炭,能够提升宝剑的韧性，是锻造必备的材料之一。,熔铸、锻冶的材料,Charcoal,,,Charcoal,,"Can enhance a sword's toughness, one of the essential Material for Forging.",Material for smelting/forging
+,3170,凤首木,高一尺，据说带有鸾凤之形，颇似枯槁。,熔铸、锻冶的材料,Phoenix Head Wood,,,Phoenix Wood,,"One foot tall, said to resemble a phoenix, looks rather withered.",Material for smelting/forging
+,3171,枫木,枫树木，红棕色，有着漂亮的花纹。,熔铸、锻冶的材料,Maple Wood,,,Maple Wood,,"Maple wood, reddish-brown, with beautiful grain.",Material for smelting/forging
+,3172,丝线,一般的丝线，常用来缝制衣物。,熔铸、锻冶的材料,Silk Thread,,,Silk Thread,,"Ordinary Silk Thread, commonly used for sewing clothes.",Material for smelting/forging
+Y,3173,蚕丝,蚕茧中抽出的丝线，尚未经过加工，比较粗糙。,熔铸、锻冶的材料,Silk,,,Silk,,"Silk Thread extracted from a silkworm cocoon, still unprocessed and relatively coarse.",Material for smelting/forging
+Y,3174,兽皮,动物的皮毛，摸上去柔软光滑，有弹性。,熔铸、锻冶的材料,Beast Hide,,,Beast Hide,,"Animal fur, soft, smooth, and elastic to the touch.",Material for smelting/forging
+,3175,朱蛤涎,青绿色的剧毒液体，接触后若不及时医治会有性命之忧。,注灵的材料,Toad Spittle,,,Toad Spit,,"A bluish-green, highly toxic liquid. Contact without prompt treatment can be fatal.",Material for smelting/forging
+,3177,赤脊骨,赤红色的脊骨，坚硬无比，极其难得之物。,注灵的材料,Red Spine Bone,,,Red Spine,,"A crimson spine bone, incredibly hard and an extremely rare item.",Material for smelting/forging
+Y,3178,灵骨突,突起的脊骨，蕴涵巨大的力量。,注灵的材料,Spirit Bone Spike,,,Spirit Spur,,Protruding spine bone containing immense power.,Material for smelting/forging
+,3179,滴血翅,带有血滴的透明薄翅，让人看着不寒而栗。,注灵的材料,Blood Drop Wings,,,Bloody Wing,,"Transparent thin wing with blood droplets, chilling to behold.",Material for smelting/forging
+,3180,七彩仙羽,色彩斑斓的翅膀，美轮美幻，拥有神奇的力量。,注灵的材料,SevenColorFeather,,,Rainbow Plume,,"Colorful wings, exquisitely beautiful, possessing magical power.",Material for smelting/forging
+,3181,晨甘露,清晨的露水，因附着在具有灵力的植物上而吸收了灵气，能够让人延年益寿。,注灵的材料,Morning Dew,,,Morning Dew,,"Morning dew, having absorbed spiritual energy by clinging to plants with spiritual power, can prolong life.",Material for smelting/forging
+Y,3182,元祖星空,神秘的雪饼，晶莹可爱，口感香软，吃过以后会产生不可思议的效果。,在迷宫中随时存档,Primordial Starry Sky,,,PrimeStarrySky,,"A mysterious snow cake, crystal-cute, soft and fragrant; eating it produces incredible effects.",Material for smelting/forging
+,3183,紫影瞳,深幽的紫色眼球，仿佛要将人吸入一般，让人着魔，不能自已。,注灵的材料,Purple Shadow Eye,,,Purple Eye,,"A deep purple eyeball that seems to draw people in, enchanting and mesmerizing, making one lose self-control.",Material for smelting/forging
+,3184,妖猫邪眼,幽绿的邪恶之眼，激发起人心深处不可估量的狂暴之力。,注灵的材料,Evil Cat's Eye,,,Demon Eye,,A sinister green evil eye that unleashes immense MAD from deep within.,Material for smelting/forging
+,3185,万棘针,密密麻麻布满尖针的虫壳，根根一针见血，锋利无比。,注灵的材料,ThousandThornNeedle,,,Thorn Shell,,"An insect shell densely covered with sharp needles, each piercing and extremely sharp.",
+,3186,噬金牙,坚硬利齿，可以轻松咬断金条。,注灵的材料,Gold-Biting Fang,,,Gold Fang,,Hard sharp teeth that can easily bite through gold bars.,Material for smelting/forging
+,3187,尖锐臼齿,豺狼虎豹的利齿，能够将任何盔甲咬得粉碎。,注灵的材料,Sharp Molar,,,Sharp Molar,,"The sharp teeth of wolves and tigers, capable of shattering any armor.",Material for smelting/forging
+,3188,断魂散魄牙,能令人魂飞魄散的尖齿，闪烁着妖异的光芒。,注灵的材料,Soul-Severing Fang,,,Soul Fang,,"Fangs that can scatter souls, shimmering with a sinister glow.",Material for smelting/forging
+,3189,暗目珠,深色幽暗的眼珠，望之令人无法压制内心的狂性。,注灵的材料,Dark Eye Orb,,,Dark Eye,,"Dark, gloomy eyes that stir uncontrollable frenzy in those who gaze upon them.",Material for smelting/forging
+,3190,珍珠蚌壳,色泽艳丽的蚌壳，里面有着大粒珍珠，散发出荧荧光彩。,注灵的材料,Pearl Oyster Shell,,,Pearl Shell,,"A brightly colored clam shell containing large pearls that emit a faint, glowing light.",Material for smelting/forging
+,3191,利刃爪,异常锋利的爪，可以轻易划破坚硬的铁甲。,注灵的材料,Sharp Claw,,,Sharp Claw,,"Extremely sharp claw, can easily slice through hard iron armor.",Material for smelting/forging
+,3192,狂暴利爪,如金刚般坚硬锐利的兽爪，附有强大的力量，能一下破开山石。,注灵的材料,Berserk Claw,,,Berserk Claw,,"Beast claws hard and sharp as diamond, attached with great power, can split mountain rocks in one strike.",Material for smelting/forging
+,3193,软鳞蜕,有着坚硬鳞片却又很柔软的蜕，刚柔并济。,注灵的材料,Soft Scale Shed,,,Soft Scale,,"A molt that is both hard-scaled yet soft, combining strength and flexibility.",Material for Infusion
+,3195,鳞光甲,巨蟒身上的皮，厚实坚韧，带有金光闪闪的鳞片。,注灵的材料,Scale Light Armor,,,Scale Armor,,"Skin from a giant serpent, thick and tough with shimmering golden scales.",Material for Infusion
+,3196,娥女香,泪滴凝结而成的水晶，发出淡淡的女人香气，据说得到它的人能够永葆青春。,注灵的材料,E'nu Fragrance,,,E'nu Scent,,"A crystal formed from condensed teardrops, emitting a faint feminine fragrance. It is said those who obtain it can retain eternal youth.",Material for Infusion
+,3197,百花醉仙露,天上百花所酿的香露，闻之熏然欲醉，令人沉入无尽的梦境。,注灵的材料,HundredFlowersDew,,,Blossom Dew,,"Nectar brewed from heavenly flowers, smelling intoxicating, causing one to sink into endless dreams.",Material for Infusion
+,3198,冰晶醉花蕊,散发着淳厚香气的水晶花蕊，令人飘飘欲仙，进入幻境之中。,注灵的材料,Ice Crystal Stamen,,,Frost Stamen,,"A crystal flower stamen exuding a rich aroma, making one feel ethereal, entering an illusion.",Material for Infusion
+,3199,冰魂晶,晶莹剔透的小冰晶，散发出阵阵寒气，让人不寒而栗。,注灵的材料,Ice Soul Crystal,,,Ice Soul,,"Transparent small ice crystals emitting chilling cold, making one shiver.",Material for Infusion
+,3200,异精筋,柔软且坚韧异常的筋，是制作良弓的极品材料，可遇而不可求。,注灵的材料,Alien Tendon,,,Strange Sinew,,"An exceptionally soft and tough sinew, a supreme Material for crafting fine bows, a rare find that cannot be sought but only encountered.",Material for Infusion
+,3202,雪云毛,纯白似雪的狐毛，传说获得此物的人能够得到野兽般强大的力量。,注灵的材料,Snow Cloud Fur,,,Snow Fur,,"Pure white fox fur, snow-like. Legend says those who obtain it gain beast-like powerful strength.",Material for Infusion
+,3203,五色茸,一段长有密集茸毛的犄角，散发出五种色彩的光芒。,注灵的材料,Five-Colored Fungus,,,Five‑Color Fur,,"A horn segment densely covered with fine hair, emitting a five-colored glow.",Material for Infusion
+,3204,索魂绫,鬼魂用来索取人类性命的丝绫，有着很重的鬼气。,注灵的材料,Soul-Snaring Ribbon,,,Soul Ribbon,,"A silk ribbon used by ghosts to claim human lives, heavy with ghostly aura.",Material for Infusion
+,3205,摄魂花,鬼界奇花，能够摄人心魄，令人走火入魔。,注灵的材料,Soul-SnatchingFlower,,,SoulSnatchFlower,,A strange flower from the Ghost Realm that can captivate hearts and drive people to Qi Deviation.,Material for Infusion
+,3206,鬼骨火,僵尸身上掉下的骨头，阴气很重。,注灵的材料,Ghost Bone Fire,,,Ghost Bone,,"Bone dropped from a zombie, heavy with yin energy.",Material for Infusion
+,3207,绿玉骨,如玉石一般细腻光滑的骨头，十分沉重，虽然是死物，但仍具有强大的力量。,注灵的材料,Green Jade Bone,,,Green Jade Bone,,"Bone as smooth and delicate as jade, very heavy. Though inanimate, it still possesses great power.",Material for Infusion
+,3208,法螺,蕴含法力的佛门宝器，能够令鬼魂烟消云散。,注灵的材料,Conch,,,Dharma Conch,,"A Buddhist treasure imbued with magical power, capable of making ghosts vanish into smoke.",Material for Infusion
+,3209,紫金佛钵,通体发出紫金之芒，能够使妖魔顿现原形，无力抵抗。,注灵的材料,Gold Buddha Bowl,,,Gold Bowl,,"Emits purple-gold light throughout, causing demons to reveal true forms and lose resistance.",Material for Infusion
+,3210,碎如意,玉如意的碎片，散发着淡淡的神秘光芒。,注灵的材料,Shattered Ruyi,,,Shattered Ruyi,,"Fragment of a jade ruyi, emits a faint mysterious glow.",Material for Infusion
+,3211,福寿果,仙界用来进贡的果实，有益于仙人的修炼，普通人吃到可以在一年中获得好运。,注灵的材料,Longevity Fruit,,,Longevity Fruit,,"A fruit used by the immortal realm as tribute, beneficial for immortal cultivation. Ordinary people who eat it can gain good luck for a year.",Material for Infusion
+,3212,琼浆玉露,仙界上好的美酒，芬芳馥郁，让仙人都难以舍杯。,注灵的材料,Fine Nectar,,,Fine Nectar,,"Superior celestial wine, fragrant and rich, making even immortals reluctant to put down the cup.",Material for Infusion
+,3213,青霜紫晶穗,散发着青紫色光芒的剑穗，能够增强灵力。,注灵的材料,Frost Amethyst Tassel,,,Frost Tassel,,"Sword tassel glowing cyan-purple, enhances spiritual power.",Material for Infusion
+,3214,金芒石,散发着金色光芒的石子，拿在手里感觉到沉甸甸的。,注灵的材料,Golden Ray Stone,,,Gold Shard,,"A stone emitting golden light, feels heavy in the hand.",Material for Infusion
+,3215,暗血凝脂,凝结大量怨气的妖血，会给人带来连连厄运。,注灵的材料,Dark Blood Fat,,,Dark Blood,,"Demonic blood condensed with great resentment, brings continuous Misfortune to people.",Material for Infusion
+,3216,花纹虎皮,十分珍贵的花纹虎皮，象征着至高无上的权力。,注灵的材料,Patterned Tiger Skin,,,Tiger Skin,,"An extremely precious Patterned Tiger Skin, symbolizing supreme authority.",Material for Infusion
+,3217,狂兽皮,坚韧的兽皮，普通利刃无法将其割破。,注灵的材料,Beast Hide,,,Berserk Hide,,"Tough Beast Hide, ordinary sharp blades cannot cut it.",Material for Infusion
+,3218,玄武甲片,非常沉重坚硬的龟甲，表面有怪异的纹路，能够抵挡锋利之物的刺击。,注灵的材料,Tortoise Armor Plate,,,Turtle Plate,,"An extremely heavy and hard turtle shell with strange patterns, capable of resisting sharp piercing attacks.",Material for Infusion
+Y,3219,炼火珠,由极热的岩浆形成，能让修行之人不惧怕炙热的火焰。,注灵的材料,Fire Refining Pearl,,,Flame Pearl,,"Formed from extremely hot magma, it allows cultivators to fear not scorching flames.",Material for Infusion
+,3220,火云鳞,带有火焰的鳞片，令人炙热难耐，附着着强大的灵力，是人间罕见之物。,注灵的材料,Fire Cloud Scale,,,Fire Scale,,"A fiery scale that causes unbearable heat, imbued with powerful spiritual energy, a rare treasure in the mortal realm.",Material for Infusion
+,3221,蓝焰烈云带,天兵天将服饰上的带子，蕴含强大的神仙之力，能够使法力大大增强。,注灵的材料,BlueFlameCloud Belt,,,Blue Flame Sash,,"A sash from celestial attire, imbued with powerful divine energy, greatly enhancing magical power.",Material for Infusion
+,3222,邪灵石,附着着鬼气的石块，拥有阴邪之力。,注灵的材料,Evil Spirit Stone,,,Sinister Stone,,"A stone attached with ghostly aura, possessing sinister power.",Material for Infusion
+,3223,残牛角,入手异常沉重的牛角碎块，透出几丝仙气。,注灵的材料,Broken Ox Horn,,,Ox Horn,,"Unusually heavy ox horn fragment, exudes a hint of immortal aura.",Material for Infusion
+,3224,尖韧角,锐利的尖角，富有韧性，同时带有强大的法力。,注灵的材料,Sharp Horn,,,Sharp Horn,,"A sharp, resilient horn imbued with powerful magic.",Material for Infusion
+,3225,乌灵刃,一截用灵石打造的断刃，乌黑透亮，锋利无比，用来斩妖除魔易如反掌。,注灵的材料,Wuling Blade,,,Wuling Blade,,"A broken blade made from spirit stone, black and translucent, extremely sharp; cuts demons and monsters with ease.",Material for Infusion
+,3226,六阳剑柄,凝聚着阳气的剑柄，散发出阵阵红光，能令妖魔无所遁形。,注灵的材料,Six Yang Sword Hilt,,,Yang Hilt,,"A hilt infused with yang energy, emitting a red glow that leaves demons and monsters with nowhere to hide.",Material for Infusion
+,3227,青玉梭,一条青龙盘踞的玉梭，蕴含着无穷灵气。,注灵的材料,Green Jade Shuttle,,,Jade Shuttle,,"A jade shuttle with a coiled Azure Dragon, containing boundless spiritual energy.",Material for Infusion
+,3228,赤蛇涎,鲜红如血的液体，传说其毒性猛于鹤顶红。,注灵的材料,Red Snake Slime,,,Red Snake Spit,,"A liquid as red as blood, said to be more toxic than crane's crown poison.",Material for Infusion
+,3229,青蛇涎,青蛇毒涎，没有气味，但却剧毒无比。,注灵的材料,Green Snake Slime,,,Green Snake Spit,,"Green snake venom, odorless but extremely poisonous.",Material for Infusion
+,3230,毒蛛涎,蜘蛛的毒涎，腐肌烂骨。,注灵的材料,Spider Venom,,,Spider Venom,,"Spider's venomous saliva, corrodes flesh and bone.",Material for Infusion
+,3231,钩镰刺,带毒的蝎刺，见血封喉。,注灵的材料,Hook-Sickle Thorn,,,Sickle Barb,,"A poisonous scorpion sting, lethal upon drawing blood.",Material for Infusion
+,3232,青幽液,黑色的剧毒液体，接触后若不及时医治会有性命之忧。,注灵的材料,Green Mystery Liquid,,,Virid Fluid,,"A black, highly toxic liquid. Contact without prompt treatment can be fatal.",Material for Infusion
+,3233,吸血针,一支极其细长的针刺，因为长期被鲜血浸润而通体鲜红。,注灵的材料,Bloodsucking Needle,,,Blood Needle,,"An extremely slender needle, stained crimson red from long-term blood immersion.",Material for Infusion
+,3234,招财聚宝珠,财神随身携带的宝珠，有招财聚宝之效。,注灵的材料,Fortune Treasure Orb,,,Fortune Pearl,,"Treasure orb carried by God of Wealth, has Fortune treasure-gathering effect.",Material for Infusion
+,3235,九狐尾绒,狐仙尾部的毛皮，具有强大的灵力，十分珍贵。,注灵的材料,Nine Fox Tail Velvet,,,Nine Tail Fur,,"Fur from a fox immortal's tail, possesses powerful spiritual energy, very precious.",Material for Infusion
+,3236,烛龙之鳞,上古巨龙的鳞片，蕴涵极强的灵力。,注灵的材料,CandleDragon Scale,,,CandleDragon Scale,,"Scale of an ancient giant dragon, contains extremely strong spiritual power.",Material for Infusion
+,3237,神木影羽,句芒掉落的羽毛，蕴涵春神的灵力。,注灵的材料,Divine Wood Feather,,,DivineWoodFeather,,"Feather dropped by Ju Mang, contains spring god's spiritual power.",Material for Infusion
+,3238,幽梦棱晶,带有梦幻般色彩的奇异晶石。,注灵的材料,Dream Prism,,,Dream Prism,,A strange crystal stone with a dreamlike color.,Material for Infusion
+,3239,夜魅灵石,在黑暗中发出柔和的光芒，石中潜藏的灵力十分特殊。,注灵的材料,Night Spirit Stone,,,Nightstone,,Emits a soft glow in darkness; the spiritual power hidden within the stone is quite unique.,Material for Infusion
+,3240,绮梦魔珠,凝聚幻瞑护将灵力的魔石，流光溢彩，如梦如幻。,注灵的材料,Fantasy Demon Pearl,,,FancyDemonOrb,,"A magic stone that condenses the phantom guardian's spiritual power, radiant and dreamlike.",Material for Infusion
+,3241,不知名的剑,不知名的长剑，外形相当与众不同，细而锐利，闪烁着凛凛寒光。,,Unknown Sword,,,Unknown Sword,,"An unknown long sword with a quite distinctive appearance, slender and sharp, gleaming with a cold, intimidating light.",Material for Infusion
+Y,3243,凤凰花枝,美丽的凤凰花，取自昆仑琼华派后山的醉花荫中。,,Phoenix Flower Branch,,,Phoenix Branch,,"Beautiful phoenix flowers, taken from the Bower behind the Kunlun Qionghua Sect.",Material for Infusion
+,3244,机关箱,夙莘交代要带给琼华派掌门的箱子，不知其中有些什么。,,Mechanism Box,,,Mechanism Box,,A box entrusted by Su Shen to be delivered to the Qionghua Sect leader; its contents are unknown.,Material for Infusion
+Y,3245,牌位,云天河之父“云天青”的牌位。,,Tablet,,,Tablet,,Yun Tianhe's father Yun Tianqing's Tablet.,Material for Infusion
+Y,3246,香炉,云天河用以给父亲上香的香炉。,,Incense Burner,,,Incense Burner,,Yun Tianhe used to offer incense to father's Incense Burner.,Material for Infusion
+Y,3247,香囊,以离香草制成的香囊，据说如果旅人带上，离故乡越远，香气就会越浓。,,Sachet,,,Sachet,,A Sachet made from Parting Herb; said to grow more fragrant the farther a traveler is from home.,Material for Infusion
+Y,3249,开元追月弓,不知以何种材料制成的宝弓，弓身隐有火灵流转，出箭极猛，相传可追上夜空中的明月。,,Kaiyuan Moon Bow,,,KaiyuanMoonBow,,"A precious bow made from an unknown Material. The bow body faintly swirls with fire spirits. Its arrows are extremely fierce, said to be able to chase the moon in the night sky.",Material for Infusion
+,3250,红宝珠,红色的宝珠蕴涵着神秘而强大的灵力，似乎是上古神陵的某一部分。,开启机关所需物件,Ruby,,,Ruby,,"Red treasure pearl contains mysterious and powerful spiritual power, seems to be part of an ancient divine tomb.",Material for Infusion
+,3251,黄宝珠,黄色的宝珠蕴涵着神秘而强大的灵力，似乎是上古神陵的某一部分。,开启机关所需物件,Topaz,,,Topaz,,"Yellow treasure pearl contains mysterious and powerful spiritual power, seems to be part of an ancient divine tomb.",Material for Infusion
+,3252,蓝宝珠,蓝色的宝珠蕴涵着神秘而强大的灵力，似乎是上古神陵的某一部分。,开启机关所需物件,Sapphire,,,Sapphire,,"Blue treasure pearl contains mysterious and powerful spiritual power, seems to be part of an ancient divine tomb.",Material for Infusion
+Y,3253,一口梦千年,仙界佳酿，传说酒劲之大，凡人喝一口就能昏睡千年，不过这仅仅是传说，未有人敢尝试。,,A Sip Dreams Millennium,,,MillenniumDreamWine,,"Celestial realm fine wine. Legend says its potency is so great that a mortal taking one sip can sleep for a thousand years, but this is just a legend; none have dared to try.",Material for Infusion
+Y,3254,紫蕴玄参,被奉为仙灵之药，传说食之便可长生，有凝神养气之功效。,,Purple Mystic Ginseng,,,Purple Ginseng,,"Revered as an immortal elixir, legend says consuming it grants longevity, with effects of Focus and nourishing qi.",Material for Infusion
+Y,3255,点心,一盘点心，看起来很好吃的样子。,,Pastry,,,Pastry,,"A Plate of Pastry, looks very delicious.",Material for Infusion
+Y,3256,无衣神水,昆仑圣山之上，水灵充沛之处所取神水，蕴涵无限灵力。,,Clothless Divine Water,,,Divine Water,,"Sacred water drawn from a place abundant with water spirits atop the Kunlun holy mountains, containing infinite spiritual power.",Material for Infusion
+Y,3257,紫陌清风,瓶内乃是灵道圣水化成的清气，嗅一下便精力充沛。,,Purple Path Clear Wind,,,WorldwideBreeze,,The bottle contains clear qi transformed from sacred spiritual water; a sniff restores vigor.,Material for Infusion
+Y,3258,濡润叶,蕴涵奇异灵气的绿叶，可润万物于无声。,,Moistening Leaf,,,Moist Leaf,,"Leaf imbued with strange spiritual energy, nourishes all things silently.",Material for Infusion
+,,,,,,,,,,,Material for Infusion
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,Item required for mechanism
+,,,,,,,,,,,Item required for mechanism
+,,,,,,,,,,,Item required for mechanism
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,

@@ -37,6 +37,17 @@ Uninstall
 Known notes
 - Some help and quest text line wraps are not fully standardized (content is complete).
 
+Translation Terminology
+- The [translation_terms/](translation_terms/) folder contains the English translation term glossary used in this project.
+- [pal4_visible_export.translated.csv](translation_terms/pal4_visible_export.translated.csv) — Complete Chinese-to-English translation table for all visible in-game text.
+- [Items.csv](translation_terms/Items.csv) — Item name translations.
+- [gears.csv](translation_terms/gears.csv) — Equipment/gear name translations.
+- [skills.csv](translation_terms/skills.csv) — Skill name translations.
+- [spells.csv](translation_terms/spells.csv) — Spell/magic name translations.
+- [tasks.csv](translation_terms/tasks.csv) — Quest/task text translations.
+- [scence.csv](translation_terms/scence.csv) — Scene/location name translations.
+- [term_whitelist.csv](translation_terms/term_whitelist.csv) — Approved terminology whitelist for translation consistency.
+
 Support / Updates
 I am DodgeHo, a long-time fan of the series.
 - GitHub: https://github.com/DodgeHo/PAL4_EnglishMod
