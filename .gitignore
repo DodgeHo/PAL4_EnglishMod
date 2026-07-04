@@ -4,3 +4,7 @@ node_modules/
 build_meta/
 release/
 0.[0-9]*/*
+private/
+drafts/
+profile-and-linkedin-copy.md
+docs/profile-and-linkedin-copy.md

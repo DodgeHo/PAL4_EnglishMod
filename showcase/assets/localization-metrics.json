@@ -1,0 +1,180 @@
+{
+  "translated_entries": 9532,
+  "script_source_files": 34,
+  "original_chinese_characters": 306937,
+  "english_translation_characters": 1023479,
+  "approx_english_words": 178372,
+  "top_source_files": [
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q06.csb",
+      "entries": 1797
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q04.csb",
+      "entries": 816
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q03.csb",
+      "entries": 734
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q14.csb",
+      "entries": 482
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q01.csb",
+      "entries": 386
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\M01.csb",
+      "entries": 369
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q05.csb",
+      "entries": 367
+    },
+    {
+      "file": ".\\pal4-pack-tool\\ToBeCompressed-script\\Q09.csb",
+      "entries": 365
+    }
+  ],
+  "workbook_file": "terminology workbook (.xlsx)",
+  "terminology_workbook_sheets": 13,
+  "sheets": [
+    {
+      "name": "Items",
+      "rows": 251,
+      "max_columns": 12,
+      "non_empty_cells": 1995,
+      "english_cells": 1037,
+      "chinese_cells": 714
+    },
+    {
+      "name": "Skill",
+      "rows": 219,
+      "max_columns": 5,
+      "non_empty_cells": 660,
+      "english_cells": 438,
+      "chinese_cells": 223
+    },
+    {
+      "name": "Gamestring",
+      "rows": 318,
+      "max_columns": 3,
+      "non_empty_cells": 949,
+      "english_cells": 351,
+      "chinese_cells": 289
+    },
+    {
+      "name": "Prescription",
+      "rows": 152,
+      "max_columns": 66,
+      "non_empty_cells": 9459,
+      "english_cells": 306,
+      "chinese_cells": 461
+    },
+    {
+      "name": "Equips",
+      "rows": 189,
+      "max_columns": 10,
+      "non_empty_cells": 1358,
+      "english_cells": 600,
+      "chinese_cells": 384
+    },
+    {
+      "name": "Spell",
+      "rows": 145,
+      "max_columns": 5,
+      "non_empty_cells": 578,
+      "english_cells": 287,
+      "chinese_cells": 148
+    },
+    {
+      "name": "Sence",
+      "rows": 293,
+      "max_columns": 8,
+      "non_empty_cells": 1754,
+      "english_cells": 1119,
+      "chinese_cells": 297
+    },
+    {
+      "name": "工作表1",
+      "rows": 359,
+      "max_columns": 3,
+      "non_empty_cells": 392,
+      "english_cells": 392,
+      "chinese_cells": 0
+    },
+    {
+      "name": "Task",
+      "rows": 196,
+      "max_columns": 8,
+      "non_empty_cells": 1369,
+      "english_cells": 389,
+      "chinese_cells": 395
+    },
+    {
+      "name": "Terms in Script",
+      "rows": 443,
+      "max_columns": 7,
+      "non_empty_cells": 902,
+      "english_cells": 448,
+      "chinese_cells": 446
+    },
+    {
+      "name": "Full Script",
+      "rows": 9533,
+      "max_columns": 7,
+      "non_empty_cells": 57199,
+      "english_cells": 19342,
+      "chinese_cells": 9533
+    },
+    {
+      "name": "Blueprints",
+      "rows": 300,
+      "max_columns": 3,
+      "non_empty_cells": 300,
+      "english_cells": 300,
+      "chinese_cells": 0
+    },
+    {
+      "name": "From Bosco",
+      "rows": 24,
+      "max_columns": 2,
+      "non_empty_cells": 45,
+      "english_cells": 24,
+      "chinese_cells": 21
+    }
+  ],
+  "content_categories": [
+    {
+      "label": "Dialogue / script",
+      "count": 9532
+    },
+    {
+      "label": "Items / equipment",
+      "count": 438
+    },
+    {
+      "label": "Skills / spells",
+      "count": 362
+    },
+    {
+      "label": "Quests / tasks",
+      "count": 195
+    },
+    {
+      "label": "UI / game strings",
+      "count": 316
+    },
+    {
+      "label": "Scenes / locations",
+      "count": 292
+    },
+    {
+      "label": "Script terminology",
+      "count": 442
+    }
+  ],
+  "generated_from": "assets/pal4_visible_export.translated.csv and the terminology workbook in assets/"
+}

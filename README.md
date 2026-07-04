@@ -68,6 +68,22 @@ Use Steam's file verification feature:
 
 Steam will restore the original game files automatically.
 
+## Localization Showcase
+
+This project includes a visual localization showcase for readers who want to understand the effort behind the English patch: translation scale, before/after samples, terminology consistency, workflow, and release packaging.
+
+<p align="center">
+  <img src="assets/localization-infographic.png" alt="PAL4 English Mod localization infographic" width="900"/>
+</p>
+
+Open the full visual page here after GitHub Pages is enabled:
+
+**[PAL4 English Mod - Visual Localization Showcase](https://dodgeho.github.io/PAL4_EnglishMod/)**
+
+Source page: [`showcase/index.html`](showcase/index.html)
+
+The showcase can also be deployed through GitHub Pages using the included workflow. Metrics are generated from `assets/pal4_visible_export.translated.csv` and the terminology workbook in `assets/`. The approximate English word count is intended to communicate project scale, not literary word-count precision.
+
 ## What I Built
 
 This repository is both a localization project and a small software delivery project. The work includes:
@@ -159,4 +175,3 @@ I am DodgeHo, a long-time fan of the series.
 - Email: asdsay@foxmail.com
 - Discord: daoanlandodge
 - QQ Group: 1064586214
-
