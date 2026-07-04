@@ -6,480 +6,624 @@
   <title>PAL4 English Mod - Localization Case Study</title>
   <meta
     name="description"
-    content="A compact case study for the PAL4 English Mod: translation scale, English samples, terminology coverage, workflow, and delivery evidence."
+    content="A visual case study for PAL4 English Mod: Chinese-to-English localization scale, samples, terminology decisions, tooling, and release delivery."
   />
   <style>
     :root {
       color-scheme: light;
       --ink: #172033;
-      --muted: #5d6878;
-      --faint: #7b8494;
-      --line: #d7dde7;
-      --paper: #ffffff;
-      --wash: #f5f7fa;
-      --blue: #2563eb;
-      --green: #0f8a61;
-      --amber: #b65a00;
-      --max: 1260px;
+      --muted: #5e6878;
+      --faint: #818897;
+      --paper: #fffaf2;
+      --card: #ffffff;
+      --line: #ded5c8;
+      --red: #b43232;
+      --red-dark: #7c2323;
+      --jade: #0f7b66;
+      --gold: #b06b12;
+      --blue: #315f9d;
+      --plum: #6c3b7c;
+      --shadow: 0 18px 48px rgba(42, 32, 18, .12);
+      --max: 1220px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       color: var(--ink);
       font-family: Arial, "Microsoft YaHei", sans-serif;
-      font-size: 14px;
-      line-height: 1.45;
-      background: var(--wash);
+      background:
+        radial-gradient(circle at 18% 0%, rgba(180, 50, 50, .12), transparent 30%),
+        linear-gradient(180deg, #fff7ec 0%, #f7f1e8 48%, #f4f7fb 100%);
     }
 
-    a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .page {
       width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
-      padding: 18px 0 20px;
+      padding: 20px 0 30px;
     }
 
-    header {
+    .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-columns: minmax(0, 1.04fr) minmax(360px, .96fr);
       gap: 20px;
-      align-items: end;
-      padding-bottom: 11px;
-      border-bottom: 1px solid var(--line);
+      align-items: stretch;
+      min-height: 620px;
     }
+
+    .hero-copy,
+    .visual-card,
+    .panel,
+    .metric,
+    .evidence-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, .9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .profile-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .avatar {
+      width: 54px;
+      height: 54px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 8px 22px rgba(23, 32, 51, .16);
+    }
+
+    .profile-row strong { display: block; font-size: 15px; }
+    .profile-row span { display: block; color: var(--muted); font-size: 12.5px; }
 
     .kicker {
-      margin: 0 0 5px;
-      color: var(--faint);
+      margin: 0 0 8px;
+      color: var(--red);
       font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .08em;
+      font-weight: 800;
+      letter-spacing: .09em;
       text-transform: uppercase;
     }
 
     h1 {
+      max-width: 780px;
       margin: 0;
-      font-size: 24px;
-      line-height: 1.15;
+      color: var(--red-dark);
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.02;
       letter-spacing: 0;
     }
 
-    .summary {
-      max-width: 760px;
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: 14px;
+    .lead {
+      max-width: 720px;
+      margin: 16px 0 18px;
+      color: #3f4654;
+      font-size: 17px;
+      line-height: 1.58;
     }
 
-    .link-row {
+    .action-row {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 7px;
-      max-width: 430px;
+      gap: 9px;
+      margin-bottom: 18px;
     }
 
-    .project-link {
+    .button {
       display: inline-flex;
       align-items: center;
-      min-height: 30px;
-      padding: 0 10px;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 13px;
       border: 1px solid var(--line);
-      border-radius: 5px;
-      background: var(--paper);
+      border-radius: 7px;
+      background: #fff;
       color: var(--ink);
-      font-size: 12px;
-      font-weight: 700;
+      font-size: 13px;
+      font-weight: 800;
       white-space: nowrap;
     }
 
-    .project-link.primary {
-      border-color: #abc8b9;
-      background: #f2faf6;
-      color: #0f684b;
-    }
+    .button.primary { border-color: var(--red); background: var(--red); color: #fff; }
+    .button.green { border-color: #99c6b9; background: #eefaf6; color: #0c6a55; }
+    .button.blue { border-color: #b8c9e0; background: #f0f6ff; color: #245184; }
 
     .metrics {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 8px;
-      margin: 12px 0;
+      gap: 10px;
+      margin-top: auto;
     }
 
     .metric {
-      min-height: 68px;
-      padding: 10px 12px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: var(--paper);
+      padding: 13px;
+      box-shadow: none;
+      transition: transform .18s ease, border-color .18s ease;
     }
 
-    .metric strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--ink);
-      font-size: 23px;
-      line-height: 1;
-      letter-spacing: 0;
-    }
+    .metric:hover { transform: translateY(-2px); border-color: #c7904a; text-decoration: none; }
+    .metric strong { display: block; color: var(--red-dark); font-size: 28px; line-height: 1; }
+    .metric span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.3; }
 
-    .metric span {
-      display: block;
-      color: var(--muted);
-      font-size: 11.8px;
-    }
-
-    .dashboard {
-      display: grid;
-      grid-template-columns: .86fr 1.36fr .88fr;
-      gap: 10px;
-      align-items: start;
-    }
-
-    .panel {
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: var(--paper);
+    .visual-card {
+      position: relative;
       overflow: hidden;
+      min-height: 620px;
+      background: #151515;
     }
 
-    .panel h2 {
-      margin: 0;
-      padding: 8px 10px;
-      border-bottom: 1px solid var(--line);
-      background: #fbfcfe;
-      font-size: 14px;
-      line-height: 1.2;
-      letter-spacing: 0;
-    }
-
-    .panel-body {
-      padding: 10px;
-    }
-
-    .scope-grid {
-      display: grid;
-      gap: 6px;
-    }
-
-    .bar-row {
-      display: grid;
-      grid-template-columns: 124px minmax(90px, 1fr) 58px;
-      gap: 8px;
-      align-items: center;
-      min-height: 22px;
-    }
-
-    .bar-label {
-      color: var(--muted);
-      font-size: 12px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .bar-track {
-      height: 9px;
-      border-radius: 999px;
-      background: #e8edf4;
-      overflow: hidden;
-    }
-
-    .bar-fill {
-      height: 100%;
-      border-radius: inherit;
-      background: #5b7fbf;
-    }
-
-    .bar-fill.subtle {
-      background: #7da190;
-    }
-
-    .bar-count {
-      color: var(--ink);
-      font-variant-numeric: tabular-nums;
-      font-weight: 700;
-      text-align: right;
-    }
-
-    table {
+    .visual-card img.cover {
       width: 100%;
-      border-collapse: collapse;
+      height: 100%;
+      min-height: 620px;
+      object-fit: cover;
+      opacity: .9;
+      transform: scale(1.01);
     }
 
-    th,
-    td {
-      padding: 8px 9px;
-      border-bottom: 1px solid #e7ebf1;
-      text-align: left;
-      vertical-align: top;
+    .visual-overlay {
+      position: absolute;
+      inset: auto 16px 16px 16px;
+      display: grid;
+      gap: 10px;
     }
 
-    th {
-      color: var(--muted);
-      font-size: 11px;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      background: #fbfcfe;
+    .ticker {
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 8px;
+      background: rgba(20, 18, 16, .76);
+      color: #fff;
     }
 
-    td {
-      font-size: 11.8px;
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 24s linear infinite;
     }
 
-    tr:last-child td {
-      border-bottom: 0;
-    }
-
-    .type {
-      width: 112px;
-      color: var(--muted);
-      font-weight: 700;
+    .ticker span {
+      padding: 9px 16px;
+      color: #fff1d6;
+      font-size: 12px;
       white-space: nowrap;
     }
 
-    .cn {
-      color: #273247;
-    }
+    @keyframes ticker { to { transform: translateX(-50%); } }
 
-    .en {
-      color: #0f5132;
-    }
-
-    .workflow {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 5px;
-      margin-bottom: 10px;
-    }
-
-    .step {
-      padding: 7px 5px;
-      border: 1px solid #dbe2ec;
-      border-radius: 5px;
-      background: #fbfcfe;
-      text-align: center;
-    }
-
-    .step strong {
-      display: block;
-      margin-bottom: 0;
+    .sample-card {
+      min-height: 178px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 9px;
+      background: rgba(255, 250, 242, .94);
       color: var(--ink);
-      font-size: 11.2px;
     }
 
-    .step span {
-      display: block;
-      color: var(--muted);
-      font-size: 11.2px;
-      line-height: 1.3;
+    .sample-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 9px;
     }
 
-    .proof-list {
-      display: grid;
-      gap: 6px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .proof-list li {
-      padding: 7px 8px;
-      border: 1px solid #dbe2ec;
-      border-radius: 5px;
-      background: #fbfcfe;
-      color: var(--muted);
-      font-size: 11.2px;
-    }
-
-    .proof-list strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--ink);
+    .sample-type {
+      color: var(--red);
       font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
     }
 
-    .note {
-      margin: 9px 0 0;
-      color: var(--faint);
-      font-size: 11.5px;
+    .dots { display: flex; gap: 5px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #d6c6b1; }
+    .dot.active { background: var(--red); }
+
+    .sample-cn,
+    .sample-en { margin: 0; }
+    .sample-cn { color: #5a3d2d; font-size: 16px; line-height: 1.45; }
+    .sample-en { margin-top: 8px; color: #133f34; font-size: 18px; line-height: 1.35; font-weight: 800; }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
     }
+
+    .panel { padding: 16px; }
+    .panel h2 { margin: 0 0 10px; color: var(--red-dark); font-size: 20px; line-height: 1.2; }
+    .panel-copy { margin: 0 0 13px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .evidence-card {
+      display: grid;
+      min-height: 118px;
+      padding: 12px;
+      box-shadow: none;
+      background: linear-gradient(180deg, #fff, #fff9ef);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .evidence-card:hover { transform: translateY(-2px); border-color: #bd8b4f; text-decoration: none; }
+    .evidence-card b { color: var(--ink); font-size: 13px; }
+    .evidence-card span { color: var(--muted); font-size: 12px; line-height: 1.38; }
+    .evidence-card em { align-self: end; color: var(--blue); font-size: 11.5px; font-style: normal; font-weight: 800; }
+
+    .mini-viz {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .donut {
+      width: min(210px, 100%);
+      aspect-ratio: 1;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: conic-gradient(var(--red) 0 48%, var(--gold) 48% 66%, var(--jade) 66% 82%, var(--blue) 82% 93%, var(--plum) 93% 100%);
+      position: relative;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
+    }
+
+    .donut::after {
+      content: "";
+      position: absolute;
+      inset: 26%;
+      border-radius: 50%;
+      background: #fffaf2;
+      box-shadow: inset 0 0 0 1px var(--line);
+    }
+
+    .legend { display: grid; gap: 8px; }
+    .legend-row { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; color: var(--muted); font-size: 12px; }
+    .swatch { width: 12px; height: 12px; border-radius: 3px; }
+    .legend-row strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+    .term-lab {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .term-list { display: grid; gap: 7px; }
+    .term-button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+    .term-button[aria-pressed="true"] { border-color: #c98338; background: #fff0d8; color: #6e3a09; }
+
+    .term-card {
+      min-height: 248px;
+      padding: 14px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #fff8ec, #f2fbf8);
+      border: 1px solid #e4d7c6;
+    }
+
+    .term-card small { color: var(--red); font-weight: 900; text-transform: uppercase; letter-spacing: .05em; }
+    .term-title { margin: 7px 0 6px; font-size: 24px; line-height: 1.1; color: var(--red-dark); }
+    .term-result { margin: 0 0 10px; color: var(--jade); font-size: 20px; font-weight: 900; }
+    .method-grid { display: grid; gap: 7px; margin-top: 10px; }
+    .method-step { padding: 8px; border-radius: 6px; background: rgba(255,255,255,.72); color: var(--muted); font-size: 12px; line-height: 1.38; }
+    .method-step b { color: var(--ink); }
 
     footer {
-      margin-top: 10px;
-      color: var(--faint);
-      font-size: 11.5px;
-      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 13px 0 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
     }
 
-    @media (max-width: 980px) {
-      .dashboard {
-        grid-template-columns: 1fr;
-      }
-
-      .metrics {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+    @media (max-width: 1080px) {
+      .hero,
+      .section-grid { grid-template-columns: 1fr; }
+      .visual-card,
+      .visual-card img.cover { min-height: 460px; }
     }
 
-    @media (max-width: 680px) {
-      .page {
-        width: min(100% - 20px, var(--max));
-        padding-top: 14px;
-      }
-
-      header {
-        grid-template-columns: 1fr;
-        align-items: start;
-      }
-
-      .link-row {
-        justify-content: flex-start;
-      }
-
-      h1 { font-size: 21px; }
-
+    @media (max-width: 760px) {
+      .page { width: min(100% - 22px, var(--max)); padding-top: 12px; }
+      .hero-copy { padding: 17px; }
+      h1 { font-size: 31px; }
+      .lead { font-size: 15px; }
       .metrics,
-      .proof-list {
-        grid-template-columns: 1fr;
-      }
-
-      .bar-row {
-        grid-template-columns: 108px 1fr 48px;
-      }
-
-      th,
-      td {
-        padding: 7px;
-      }
+      .evidence-grid,
+      .mini-viz,
+      .term-lab { grid-template-columns: 1fr; }
+      .visual-card,
+      .visual-card img.cover { min-height: 500px; }
+      .sample-en { font-size: 16px; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <header>
-      <div>
-        <p class="kicker">PAL4 English Mod / localization case study</p>
-        <h1>Large-scale Chinese-to-English game localization, shipped as a usable patch.</h1>
-        <p class="summary">
-          A compact evidence sheet for translation volume, terminology control, in-game text review,
-          and release packaging. The emphasis is on accumulated work, not a slogan.
-        </p>
-      </div>
-      <nav class="link-row" aria-label="Project links">
-        <a class="project-link primary" href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/latest">Download patch</a>
-        <a class="project-link" href="https://github.com/DodgeHo/PAL4_EnglishMod/issues">Contact / Issues</a>
-        <a class="project-link" href="https://github.com/sponsors/DodgeHo">Sponsor maintainer</a>
-        <a class="project-link" href="https://github.com/DodgeHo/PAL4_EnglishMod">GitHub</a>
-      </nav>
-    </header>
+    <section class="hero" aria-label="PAL4 English Mod localization case study">
+      <div class="hero-copy">
+        <div class="profile-row">
+          <a href="https://github.com/DodgeHo"><img class="avatar" src="https://avatars.githubusercontent.com/u/27200539?v=4" alt="DodgeHo GitHub avatar" /></a>
+          <div>
+            <strong>DodgeHo / Dodge</strong>
+            <span>Fan localization maintainer, translator, and patch tooling developer</span>
+          </div>
+        </div>
 
-    <section class="metrics" aria-label="Localization metrics">
-      <div class="metric"><strong>9,532</strong><span>translated visible text entries</span></div>
-      <div class="metric"><strong>178k+</strong><span>approximate English words</span></div>
-      <div class="metric"><strong>34</strong><span>script/source files covered</span></div>
-      <div class="metric"><strong>13</strong><span>terminology workbook sheets</span></div>
+        <p class="kicker">Chinese-to-English game localization case study</p>
+        <h1>Thousands of lines translated, normalized, tested, and shipped as a real player patch.</h1>
+        <p class="lead">
+          This is not a small sample translation. It is a shipped English mod for Sword and Fairy 4,
+          combining long-form English localization, terminology control, installer tooling, and release packaging.
+        </p>
+
+        <div class="action-row" aria-label="Project actions">
+          <a class="button primary" href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/latest">Download latest patch</a>
+          <a class="button green" href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/download/v1.1/PAL4.EnglishMod.Patch.1.1b.zip">Manual patch zip</a>
+          <a class="button blue" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/pal4_visible_export.translated.csv">Translation table</a>
+          <a class="button" href="https://github.com/DodgeHo/PAL4_EnglishMod/issues">Contact / issues</a>
+          <a class="button" href="https://github.com/sponsors/DodgeHo">Sponsor</a>
+          <a class="button" href="https://github.com/DodgeHo/PAL4_EnglishMod">GitHub repo</a>
+        </div>
+
+        <div class="metrics" aria-label="Project metrics">
+          <a class="metric" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/pal4_visible_export.translated.csv"><strong data-count="9532">0</strong><span>visible text entries translated</span></a>
+          <a class="metric" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/assets/localization-metrics.json"><strong data-count="178">0</strong><span>thousand+ English words estimated</span></a>
+          <a class="metric" href="https://github.com/DodgeHo/PAL4_EnglishMod/tree/main/translation_terms"><strong data-count="8">0</strong><span>structured terminology CSV files</span></a>
+          <a class="metric" href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/tag/v1.1"><strong data-count="4">0</strong><span>release assets for players</span></a>
+        </div>
+      </div>
+
+      <div class="visual-card">
+        <img class="cover" src="assets/EnglishMod.jpg" alt="Sword and Fairy 4 English Mod cover image" />
+        <div class="visual-overlay">
+          <div class="ticker" aria-label="Localization evidence ticker">
+            <div class="ticker-track">
+              <span>9,532 translated rows</span><span>178k+ English words</span><span>dialogue + UI + items + quests</span><span>installer + rollback + releases</span>
+              <span>9,532 translated rows</span><span>178k+ English words</span><span>dialogue + UI + items + quests</span><span>installer + rollback + releases</span>
+            </div>
+          </div>
+          <article class="sample-card" aria-live="polite">
+            <div class="sample-top">
+              <span id="sample-type" class="sample-type">Dialogue</span>
+              <div class="dots" id="sample-dots" aria-hidden="true"></div>
+            </div>
+            <p id="sample-cn" class="sample-cn">云天河：（这地方好暗，以前都没进来过——）</p>
+            <p id="sample-en" class="sample-en">Yun Tianhe: (This place is so dark, never been in here before-)</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="dashboard" aria-label="Localization evidence dashboard">
+    <section class="section-grid" aria-label="Evidence map and visual summary">
       <div class="panel">
-        <h2>Text Coverage</h2>
-        <div class="panel-body">
-          <div class="scope-grid" aria-label="Content coverage chart">
-            <div class="bar-row"><div class="bar-label">Visible text CSV</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-count">9,532</div></div>
-            <div class="bar-row"><div class="bar-label">Items</div><div class="bar-track"><div class="bar-fill subtle" style="width:26%"></div></div><div class="bar-count">251</div></div>
-            <div class="bar-row"><div class="bar-label">Skills</div><div class="bar-track"><div class="bar-fill subtle" style="width:23%"></div></div><div class="bar-count">219</div></div>
-            <div class="bar-row"><div class="bar-label">Game strings</div><div class="bar-track"><div class="bar-fill subtle" style="width:33%"></div></div><div class="bar-count">318</div></div>
-            <div class="bar-row"><div class="bar-label">Equipment</div><div class="bar-track"><div class="bar-fill subtle" style="width:20%"></div></div><div class="bar-count">189</div></div>
-            <div class="bar-row"><div class="bar-label">Spells</div><div class="bar-track"><div class="bar-fill subtle" style="width:25%"></div></div><div class="bar-count">242</div></div>
-            <div class="bar-row"><div class="bar-label">Scenes</div><div class="bar-track"><div class="bar-fill subtle" style="width:31%"></div></div><div class="bar-count">292</div></div>
-            <div class="bar-row"><div class="bar-label">Tasks</div><div class="bar-track"><div class="bar-fill subtle" style="width:21%"></div></div><div class="bar-count">195</div></div>
-          </div>
-          <p class="note">
-            Counts are generated from the visible-text CSV and terminology workbook. Workbook rows are shown to indicate breadth, not direct word count.
-          </p>
+        <h2>Clickable Evidence Map</h2>
+        <p class="panel-copy">Each tile points to the actual repository artifact behind the claim.</p>
+        <div class="evidence-grid">
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/pal4_visible_export.translated.csv"><b>Full translation table</b><span>Visible in-game Chinese text paired with localized English output.</span><em>Open CSV</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/tree/main/translation_terms"><b>Terminology system</b><span>Items, gear, skills, spells, tasks, scenes, and whitelist files.</span><em>Browse terms</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/pal4_english_mod_installer.py"><b>Installer tooling</b><span>Downloader installer, Steam path detection, patch download and recovery flow.</span><em>Read code</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/tag/v1.1"><b>Release delivery</b><span>Player-facing release packages, installer binary, manual patch zip, docs.</span><em>Open release</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/README.md"><b>User documentation</b><span>Install, uninstall, recovery, scope, and project explanation for non-technical players.</span><em>Open README</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/tools/pal4_translation_style_rules.py"><b>Style checks</b><span>Rules and scripts used to make translation decisions reviewable.</span><em>Open tool</em></a>
         </div>
       </div>
 
       <div class="panel">
-        <h2>Before / After Samples</h2>
-        <div class="panel-body">
-          <table aria-label="Chinese source and English localized samples">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Chinese source</th>
-                <th>English localized text</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="type">Dialogue</td>
-                <td class="cn">云天河：（这地方好暗，以前都没进来过——）</td>
-                <td class="en">Yun Tianhe: (This place is so dark, never been in here before-)</td>
-              </tr>
-              <tr>
-                <td class="type">Dialogue</td>
-                <td class="cn">云天河：（……爹说过的机关？）</td>
-                <td class="en">Yun Tianhe: (...The mechanism father mentioned?)</td>
-              </tr>
-              <tr>
-                <td class="type">Context</td>
-                <td class="cn">云天河：（爹说只要有这机关，其他人绝对不会闯到洞里。）</td>
-                <td class="en">Yun Tianhe: (Father said with this mechanism, no one else could ever break into the cave.)</td>
-              </tr>
-              <tr>
-                <td class="type">Item text</td>
-                <td class="cn">仙人炼制的药膏，具有白骨生肉的神奇功效。</td>
-                <td class="en">An ointment refined by immortals, possessing the miraculous effect of regenerating flesh on bone.</td>
-              </tr>
-              <tr>
-                <td class="type">Location</td>
-                <td class="cn">青鸾峰</td>
-                <td class="en">Qingluan Peak</td>
-              </tr>
-            </tbody>
-          </table>
+        <h2>What the Work Actually Covers</h2>
+        <p class="panel-copy">The useful split is not a vague text category; it is the artifact workflow behind a playable patch.</p>
+        <div class="mini-viz">
+          <div class="donut" aria-label="Work distribution visual"></div>
+          <div class="legend">
+            <div class="legend-row"><i class="swatch" style="background:var(--red)"></i><span>Script/dialogue translation</span><strong>9,532 rows</strong></div>
+            <div class="legend-row"><i class="swatch" style="background:var(--gold)"></i><span>Terminology CSVs</span><strong>8 files</strong></div>
+            <div class="legend-row"><i class="swatch" style="background:var(--jade)"></i><span>Installer and recovery code</span><strong>Python</strong></div>
+            <div class="legend-row"><i class="swatch" style="background:var(--blue)"></i><span>Release packaging</span><strong>v1.1</strong></div>
+            <div class="legend-row"><i class="swatch" style="background:var(--plum)"></i><span>Player documentation</span><strong>README</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid" aria-label="Classical terminology method and delivery proof">
+      <div class="panel">
+        <h2>How Classical Terms Become Readable English</h2>
+        <p class="panel-copy">The goal is not word-for-word literalness. The process is: identify the cultural image, preserve names where useful, then choose English that fits UI length and fantasy tone.</p>
+        <div class="term-lab">
+          <div class="term-list" id="term-list"></div>
+          <article class="term-card">
+            <small id="term-source">Source term</small>
+            <h3 id="term-title" class="term-title">青鸾峰</h3>
+            <p id="term-result" class="term-result">Qingluan Peak</p>
+            <div class="method-grid">
+              <div class="method-step"><b>1. Cultural image:</b> <span id="term-image">Qingluan is a mythic bird image; translating it literally would feel awkward.</span></div>
+              <div class="method-step"><b>2. Naming choice:</b> <span id="term-choice">Keep Qingluan as a proper noun and translate the geographic suffix.</span></div>
+              <div class="method-step"><b>3. In-game constraint:</b> <span id="term-constraint">Short enough for a location label, still readable to English players.</span></div>
+            </div>
+          </article>
         </div>
       </div>
 
       <div class="panel">
-        <h2>Workflow & Evidence</h2>
-        <div class="panel-body">
-          <div class="workflow">
-            <div class="step"><strong>Extract</strong></div>
-            <div class="step"><strong>Translate</strong></div>
-            <div class="step"><strong>Glossary</strong></div>
-            <div class="step"><strong>QA</strong></div>
-            <div class="step"><strong>Release</strong></div>
-          </div>
-          <ul class="proof-list">
-            <li><strong>English output</strong>Dialogue, UI, items, quests, skills, and names require different writing registers.</li>
-            <li><strong>Consistency</strong>Names, places, items, and skills are tracked through workbook-based terminology control.</li>
-            <li><strong>Delivery</strong>The work ships as a player-facing patch with installer, rollback, and documentation.</li>
-          </ul>
-          <p class="note">
-            This page is intentionally compact: the evidence should feel dense and verifiable, not exaggerated.
-          </p>
+        <h2>From Translation to a Usable Patch</h2>
+        <p class="panel-copy">This project demonstrates English writing, consistency work, and software delivery together.</p>
+        <div class="evidence-grid">
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/scence.csv"><b>Place names</b><span>Examples such as Qingluan Peak, Stone Sink Cave, Xuannü Temple.</span><em>Open scenes</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/gears.csv"><b>Item flavor text</b><span>Weapon and equipment descriptions require concise fantasy English.</span><em>Open gear</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/translation_terms/tasks.csv"><b>Quest/task text</b><span>Functional instructions need to stay clear after localization.</span><em>Open tasks</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/blob/main/pal4_english_mod_gui.py"><b>GUI installer</b><span>Non-technical users get a friendlier installation path.</span><em>Open GUI</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/actions/workflows/deploy-showcase.yml"><b>Pages deployment</b><span>This case study is deployed from the repository through GitHub Actions.</span><em>Open action</em></a>
+          <a class="evidence-card" href="https://github.com/DodgeHo/PAL4_EnglishMod/issues"><b>Feedback loop</b><span>Players can report installation or translation issues publicly.</span><em>Open issues</em></a>
         </div>
       </div>
     </section>
 
     <footer>
-      Non-commercial fan localization project for the Steam version of Sword and Fairy 4.
+      <span>PAL4 English Mod is a non-commercial fan project for the Steam version of Sword and Fairy 4.</span>
+      <span><a href="https://github.com/DodgeHo">DodgeHo on GitHub</a> · <a href="https://github.com/sponsors/DodgeHo">Sponsor</a> · <a href="https://github.com/DodgeHo/PAL4_EnglishMod/releases/latest">Latest release</a></span>
     </footer>
   </main>
+
+  <script>
+    const samples = [
+      {
+        type: "Dialogue tone",
+        cn: "云天河：（这地方好暗，以前都没进来过——）",
+        en: "Yun Tianhe: (This place is so dark, never been in here before-)"
+      },
+      {
+        type: "Character context",
+        cn: "云天河：（爹说只要有这机关，其他人绝对不会闯到洞里。）",
+        en: "Yun Tianhe: (Father said with this mechanism, no one else could ever break into the cave.)"
+      },
+      {
+        type: "Item description",
+        cn: "仙人炼制的药膏，具有白骨生肉的神奇功效。",
+        en: "An ointment refined by immortals, possessing the miraculous effect of regenerating flesh on bone."
+      },
+      {
+        type: "Place name",
+        cn: "青鸾峰",
+        en: "Qingluan Peak"
+      },
+      {
+        type: "Sect / mythic term",
+        cn: "九天玄女",
+        en: "Ninth Heaven Xuannü"
+      }
+    ];
+
+    const terms = [
+      {
+        label: "青鸾峰",
+        result: "Qingluan Peak",
+        image: "Qingluan is a mythic bird image; translating it literally would feel awkward.",
+        choice: "Keep Qingluan as a proper noun and translate the geographic suffix.",
+        constraint: "Short enough for a location label, still readable to English players."
+      },
+      {
+        label: "九天玄女",
+        result: "Ninth Heaven Xuannü",
+        image: "The term points to a specific Daoist mythological figure, not a generic goddess.",
+        choice: "Translate the cosmological rank, preserve Xuannü as the name.",
+        constraint: "Avoids flattening the reference into vague fantasy wording."
+      },
+      {
+        label: "石沉溪洞",
+        result: "Stone Sink Cave",
+        image: "The name evokes terrain and mood more than a modern place label.",
+        choice: "Use plain English nouns that sound like a playable RPG location.",
+        constraint: "Readable in maps, quest text, and dialogue without over-explaining."
+      },
+      {
+        label: "飞雯焕日",
+        result: "Rainbow Sunblade",
+        image: "The source suggests radiant motion and sun imagery rather than a literal object.",
+        choice: "Condense the image into a weapon-like English name.",
+        constraint: "Shorter than a literal phrase, strong enough for equipment UI."
+      }
+    ];
+
+    const typeEl = document.getElementById("sample-type");
+    const cnEl = document.getElementById("sample-cn");
+    const enEl = document.getElementById("sample-en");
+    const dotsEl = document.getElementById("sample-dots");
+    let sampleIndex = 0;
+
+    samples.forEach((_, index) => {
+      const dot = document.createElement("span");
+      dot.className = "dot" + (index === 0 ? " active" : "");
+      dotsEl.appendChild(dot);
+    });
+
+    function renderSample(index) {
+      const sample = samples[index];
+      typeEl.textContent = sample.type;
+      cnEl.textContent = sample.cn;
+      enEl.textContent = sample.en;
+      [...dotsEl.children].forEach((dot, dotIndex) => dot.classList.toggle("active", dotIndex === index));
+    }
+
+    setInterval(() => {
+      sampleIndex = (sampleIndex + 1) % samples.length;
+      renderSample(sampleIndex);
+    }, 3600);
+
+    document.querySelectorAll("[data-count]").forEach((node) => {
+      const target = Number(node.dataset.count);
+      const suffix = node.nextElementSibling.textContent.includes("thousand") ? "k+" : "";
+      const start = performance.now();
+      const duration = 900;
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = Math.round(target * (1 - Math.pow(1 - progress, 3)));
+        node.textContent = value.toLocaleString() + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+
+    const termList = document.getElementById("term-list");
+    const termTitle = document.getElementById("term-title");
+    const termResult = document.getElementById("term-result");
+    const termImage = document.getElementById("term-image");
+    const termChoice = document.getElementById("term-choice");
+    const termConstraint = document.getElementById("term-constraint");
+
+    function renderTerm(index) {
+      const term = terms[index];
+      termTitle.textContent = term.label;
+      termResult.textContent = term.result;
+      termImage.textContent = term.image;
+      termChoice.textContent = term.choice;
+      termConstraint.textContent = term.constraint;
+      [...termList.children].forEach((button, buttonIndex) => button.setAttribute("aria-pressed", String(buttonIndex === index)));
+    }
+
+    terms.forEach((term, index) => {
+      const button = document.createElement("button");
+      button.className = "term-button";
+      button.type = "button";
+      button.textContent = term.label;
+      button.setAttribute("aria-pressed", String(index === 0));
+      button.addEventListener("click", () => renderTerm(index));
+      termList.appendChild(button);
+    });
+  </script>
 </body>
 </html>
